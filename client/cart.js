@@ -29,12 +29,9 @@ let total = 0;
 
       const taxes = 5;
       const shipping = 20;
-      let fcost = total + taxes + shipping;
+      const fcost = total + taxes + shipping;
 
-      total = 0;
-      document.getElementById('total').innerHTML = `<p>Cost $${total}</p>`;
-      fcost = 0;  
-      document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
+  
 
       document.getElementById("total").innerHTML = `<p>Cost $${total}</p>`;
       document.getElementById("taxes").innerHTML = `<p>+ Taxes $${taxes}</p>`;
