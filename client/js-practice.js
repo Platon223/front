@@ -38,7 +38,7 @@ function uptadeProducts(products) {
                       <div class="card-body">
                         <h5 class="card-title">${pr.nm}</h5>
                         <p class="card-text">$ ${pr.price}</p>
-                        <a href="#" class="btn btn-primary"> <button class="btn btn-primary" onclick="place1();">Add to cart</button></a>
+                        <a href="#" class="btn btn-primary"> <button class="btn btn-primary" onclick="place${pr.pl}(${pr.nm}, ${pr.price});">Add to cart</button></a>
                       </div>
                     </div> </div> `;
    
