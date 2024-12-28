@@ -244,11 +244,11 @@ function submit() {
        
         console.log(price);
 
-        console.log(nm);
+        
 
         const itemsArray = [];
 
-        itemsArray.push(nm);
+        itemsArray.push(pl);
 
         console.log(itemsArray);
 
