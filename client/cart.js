@@ -33,6 +33,8 @@ let total = 0;
 
       total = 0;
       document.getElementById('total').innerHTML = `<p>Cost $${total}</p>`;
+      fcost = 0;  
+      document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
 
       document.getElementById("total").innerHTML = `<p>Cost $${total}</p>`;
       document.getElementById("taxes").innerHTML = `<p>+ Taxes $${taxes}</p>`;
