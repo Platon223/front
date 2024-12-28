@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://store-4-rc42.onrender.com');
 
 let productStorageBaits = "";
 let productStorageRods = "";
