@@ -1,1 +1,10 @@
+[build]
+  base = ""
+  publish = "build"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/js-practice.html"
+  status = 200
 
