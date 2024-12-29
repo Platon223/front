@@ -9,7 +9,9 @@ let productTrack = "";
 let uptades = "";
 const sbutton = document.querySelector('.sbutton');
 
-document.querySelector('num-users').innerHTML = localStorage.getItem('see-users');
+socket.on('users', (users) => {
+  console.log(users);
+})
 
 sbutton.addEventListener('click', () => {
     const productName = document.getElementById("name").value;
