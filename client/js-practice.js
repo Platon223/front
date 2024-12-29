@@ -27,7 +27,6 @@ socket.on('added-product', (product) => {
 })
 
 socket.on('users', (users) => {
-  localStorage.setItem('see-users', users);
   console.log(users);
 })
 
