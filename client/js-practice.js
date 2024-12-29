@@ -615,7 +615,7 @@ document.querySelector('.row').innerHTML = localStorage.getItem('uptadation');
 
 setTimeout(function () {
     localStorage.removeItem("uptadation");
-    document.querySelector('.row').innerHTML = '';
+  
   }, 10000);
 
 
