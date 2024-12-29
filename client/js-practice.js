@@ -26,6 +26,10 @@ socket.on('added-product', (product) => {
   console.log([product]);
 })
 
+socket.on('users', (users) => {
+  console.log(users);
+})
+
 
 
 
