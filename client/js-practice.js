@@ -38,7 +38,7 @@ function uptadeProducts(products) {
                       <div class="card-body">
                         <h5 class="card-title">${pr.nm}</h5>
                         <p class="card-text">$ ${pr.price}</p>
-                        <a href="#" class="btn btn-primary"> <button class="btn btn-primary" onclick="place${pr.pl}('${pr.nm}', ${pr.price});">Add to cart</button></a>
+                        <a href="#" class="btn btn-primary"> <button class="btn btn-primary" onclick="place${pr.pl}('${pr.nm}', ${pr.price}, '${pr.img}');">Add to cart</button></a>
                       </div>
                     </div> </div> `;
    
@@ -236,11 +236,12 @@ function submit() {
         document.querySelector(".uptadation").innerHTML = uptades;
       }
 
-      function place1(nm, price) {
+      function place1(nm, price, img) {
        
 
         localStorage.setItem('price1', price);
         localStorage.setItem('code1', nm);
+        localStorage.setItem('img1', img);
 
         
 
@@ -252,7 +253,7 @@ function submit() {
 
         for (let i = 0; i < itemsArray.length; i++) {
           let html = `<div class="stuff1"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="...">
+        <img src="${img}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${nm}  $ ${price}</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
