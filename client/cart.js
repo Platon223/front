@@ -27,7 +27,7 @@ let total = 0;
       let count8 = 0;
       count8 = Number(localStorage.getItem("count8"));
 
-      const taxes = 5;
+      const taxes = 0;
       const shipping = 20;
       const fcost = total + taxes + shipping;
 
