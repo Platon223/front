@@ -236,25 +236,17 @@ function submit() {
         document.querySelector(".uptadation").innerHTML = uptades;
       }
 
-      function place1(nm, price) {
-        console.log('hello');
-         console.log(nm);
+      function place1(pl, price) {
+       
 
         localStorage.setItem('price1', price);
-        localStorage.setItem('code1', nm);
-
-       
-
-       
-        console.log(price);
+        localStorage.setItem('code1', pl);
 
         
 
         const itemsArray = [];
 
-        itemsArray.push(nm);
-
-        console.log(itemsArray);
+        itemsArray.push(pl);
 
         let cartHTML = "";
 
@@ -262,7 +254,7 @@ function submit() {
           let html = `<div class="stuff1"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">${nm}  $ ${price}</h5>
+          <h5 class="card-title">${pl}  $ ${price}</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <ul class="list-group list-group-flush">
