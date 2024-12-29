@@ -237,11 +237,13 @@ function submit() {
       }
 
       function place1(nm, price) {
+        console.log('hello');
+         console.log(nm);
 
         localStorage.setItem('price1', price);
         localStorage.setItem('code1', nm);
 
-        console.log(nm)
+       
 
        
         console.log(price);
