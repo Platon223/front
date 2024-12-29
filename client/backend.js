@@ -17,7 +17,7 @@ sbutton.addEventListener('click', () => {
     const productPrice = document.getElementById("price").value;
     const productImg = document.getElementById("image").value;
   
-    const product = { price: productPrice, nm: productName, nm2: productName2, img: productImg, pl: productPlace };
+    const product = { price: productName2, nm: productName, nm2: productName2, img: productImg, pl: productPlace };
 
     console.log(product);
   
