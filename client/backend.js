@@ -1,4 +1,4 @@
-const socket = io('https://store-6.onrender.com/');
+const socket = io('https://store-7.onrender.com');
 
 let productStorageBaits = "";
 let productStorageRods = "";
