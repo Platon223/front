@@ -10,13 +10,14 @@ let uptades = "";
 const sbutton = document.querySelector('.sbutton');
 
 sbutton.addEventListener('click', () => {
-    let productName = document.querySelector(".name").value;
-    let productClass = document.querySelector(".classification").value;
-    let productPlace = document.querySelector(".place").value;
-    let productPrice = document.querySelector(".price").value;
-    let productImg = document.querySelector(".imgURL").value;
+    const productName = document.getElementById("name").value;
+    const productName2 = document.getElementById("name2").value;
+    const productClass = document.getElementById("class").value;
+    const productPlace = document.getElementById("place").value;
+    const productPrice = document.getElementById("price").value;
+    const productImg = document.getElementById("img").value;
   
-    const product = { price: productPrice, nm: productName, img: productImg, pl: productPlace };
+    const product = { price: productPrice, nm: productName, nm2: productName2 img: productImg, pl: productPlace };
 
     console.log(product);
   
