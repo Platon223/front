@@ -10,6 +10,7 @@ let uptades = "";
 const sbutton = document.querySelector('.sbutton');
 
 socket.on('users', (users) => {
+  document.querySelector('num-users').innerHTML = `${users} people are on your site`;
   console.log(users);
 })
 
