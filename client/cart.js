@@ -115,7 +115,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing2");
         localStorage.removeItem("count2");
@@ -152,7 +155,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing3");
         localStorage.removeItem("count3");
@@ -187,7 +193,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing4");
         localStorage.removeItem("count4");
@@ -222,7 +231,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing5");
         localStorage.removeItem("count5");
@@ -257,7 +269,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing6");
         localStorage.removeItem("count6");
@@ -292,7 +307,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing7");
         localStorage.removeItem("count7");
@@ -327,7 +345,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>`;
 
         localStorage.removeItem("thing8");
         localStorage.removeItem("count8");
