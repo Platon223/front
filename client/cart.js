@@ -343,11 +343,11 @@ let total = 0;
         popEl.innerHTML = '';
         
         const emailfinalmess = JSON.stringify(localStorage.getItem("final"));
-        let usermail = document.getElementById('usermail').value;
+        const usermail = document.getElementById('usermail');
 
         let params = {
           name: ffcost,
-          email: usermail,
+          email: usermail.value,
           message: emailfinalmess,
         };
 
