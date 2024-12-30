@@ -30,10 +30,9 @@ let total = 0;
 
       const taxes = 0;
       const shipping = 20;
-      let fcost = total + taxes + shipping;
+      const fcost = total + taxes + shipping;
 
-      total = 0;
-      fcost = 0;
+   
   
 
       document.getElementById("total").innerHTML = `<p>Cost $${total}</p>`;
