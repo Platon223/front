@@ -331,6 +331,8 @@ let total = 0;
 
       
       const emailfinal = JSON.parse(localStorage.getItem("final"));
+      const usermail = document.getElementById('usermail').value;
+      console.log(usermail);
       
       const ffcost = localStorage.getItem("fcost");
       console.log(ffcost);
@@ -343,12 +345,12 @@ let total = 0;
         popEl.innerHTML = '';
         
         const emailfinalmess = JSON.stringify(localStorage.getItem("final"));
-        const usermail = document.getElementById('usermail');
+        
 
         let params = {
           name: ffcost,
-          email: usermail.value,
-          message: emailfinalmess,
+          email: usermail,
+          message: emailfinalmess
         };
 
         const serviceID = "service_vjaphak";
