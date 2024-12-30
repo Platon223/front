@@ -1,8 +1,5 @@
-const usermail = document.getElementById('usermail').value;
 
-alert(usermail);
 
-console.log(usermail);
 
 let total = 0;
       total = Number(localStorage.getItem("total"));
@@ -33,8 +30,10 @@ let total = 0;
 
       const taxes = 0;
       const shipping = 20;
-      const fcost = total + taxes + shipping;
+      let fcost = total + taxes + shipping;
 
+      total = 0;
+      fcost = 0;
   
 
       document.getElementById("total").innerHTML = `<p>Cost $${total}</p>`;
@@ -344,6 +343,7 @@ let total = 0;
       console.log(emailfinal);
 
       function sendEmail() {
+        const usermail = document.getElementById('usermail');
 
         const popEl = document.getElementById('exampleModal');
         popEl.innerHTML = '';
@@ -353,7 +353,7 @@ let total = 0;
 
         let params = {
           name: ffcost,
-          email: usermail ,
+          email: usermail.value,
           message: emailfinalmess
         };
 
