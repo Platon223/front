@@ -41,7 +41,10 @@ let total = 0;
       document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
       document.querySelector(
         ".checkt"
-      ).innerHTML = `<p> Your Total $${fcost} </p>`;
+      ).innerHTML = `<p> Your Total $${fcost} </p> <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>`;
 
       localStorage.setItem("fcost", fcost);
 
@@ -74,7 +77,10 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>`;
 
         localStorage.removeItem("thing1");
         localStorage.removeItem("count1");
