@@ -332,7 +332,7 @@ let total = 0;
       
       const emailfinal = JSON.parse(localStorage.getItem("final"));
       
-      console.log(usermail);
+   
       
       const ffcost = localStorage.getItem("fcost");
       console.log(ffcost);
