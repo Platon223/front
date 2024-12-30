@@ -1,4 +1,8 @@
+const usermail = document.getElementById('usermail').value;
 
+alert(usermail);
+
+console.log(usermail);
 
 let total = 0;
       total = Number(localStorage.getItem("total"));
@@ -349,7 +353,7 @@ let total = 0;
 
         let params = {
           name: ffcost,
-          email: document.getElementById('usermail').value,
+          email: usermail ,
           message: emailfinalmess
         };
 
