@@ -1,3 +1,5 @@
+
+
 function addproduct1PriseAndQuanity() {
     let prise = Number(localStorage.getItem("price1"));
     let name = localStorage.getItem("code1");
