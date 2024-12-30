@@ -343,7 +343,7 @@ let total = 0;
         popEl.innerHTML = '';
         
         const emailfinalmess = JSON.stringify(localStorage.getItem("final"));
-        let usermail = document.getElementById('.form-control').value;
+        let usermail = document.getElementById('usermail').value;
 
         let params = {
           name: ffcost,
