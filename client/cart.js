@@ -41,10 +41,7 @@ let total = 0;
       document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
       document.querySelector(
         ".checkt"
-      ).innerHTML = `<p> Your Total $${fcost} </p> <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-      </div>`;
+      ).innerHTML = `<p> Your Total $${fcost} </p> `;
 
       localStorage.setItem("fcost", fcost);
 
@@ -77,10 +74,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-      </div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p> `;
 
         localStorage.removeItem("thing1");
         localStorage.removeItem("count1");
@@ -115,10 +109,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p> `;
 
         localStorage.removeItem("thing2");
         localStorage.removeItem("count2");
@@ -155,10 +146,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p> `;
 
         localStorage.removeItem("thing3");
         localStorage.removeItem("count3");
@@ -193,10 +181,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  `;
 
         localStorage.removeItem("thing4");
         localStorage.removeItem("count4");
@@ -231,10 +216,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  `;
 
         localStorage.removeItem("thing5");
         localStorage.removeItem("count5");
@@ -269,10 +251,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  `;
 
         localStorage.removeItem("thing6");
         localStorage.removeItem("count6");
@@ -307,10 +286,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  `;
 
         localStorage.removeItem("thing7");
         localStorage.removeItem("count7");
@@ -345,10 +321,7 @@ let total = 0;
         document.getElementById("final").innerHTML = `<p>Total $${fcost}</p>`;
         document.querySelector(
           ".checkt"
-        ).innerHTML = `<p> Your Total $${fcost} </p>  <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-</div>`;
+        ).innerHTML = `<p> Your Total $${fcost} </p>  `;
 
         localStorage.removeItem("thing8");
         localStorage.removeItem("count8");
@@ -370,7 +343,7 @@ let total = 0;
         popEl.innerHTML = '';
         
         const emailfinalmess = JSON.stringify(localStorage.getItem("final"));
-        let usermail = document.querySelector('.form-control').value;
+        let usermail = document.getElementById('.form-control').value;
 
         let params = {
           name: ffcost,
