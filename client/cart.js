@@ -344,6 +344,10 @@ let total = 0;
       function sendEmail() {
         const usermail = document.getElementById('usermail');
 
+        if(usermail.value === '') {
+              alert('You have to provide an email');
+        }
+
         const popEl = document.getElementById('exampleModal');
         popEl.innerHTML = '';
         
