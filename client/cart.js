@@ -370,10 +370,11 @@ let total = 0;
         popEl.innerHTML = '';
         
         const emailfinalmess = JSON.stringify(localStorage.getItem("final"));
+        let usermail = document.querySelector('.form-control').value;
 
         let params = {
           name: ffcost,
-          email: "Example",
+          email: usermail,
           message: emailfinalmess,
         };
 
