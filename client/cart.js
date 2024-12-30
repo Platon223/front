@@ -363,6 +363,8 @@ let total = 0;
 
               localStorage.clear();
 
+              location.reload();
+
             
 
             try{
