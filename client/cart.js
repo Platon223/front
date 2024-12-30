@@ -1,5 +1,5 @@
 
-localStorage.clear();
+
 
 let total = 0;
       total = Number(localStorage.getItem("total"));
