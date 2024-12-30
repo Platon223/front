@@ -361,6 +361,8 @@ let total = 0;
 
         emailjs.send(serviceID, templateID, params).then((res) => {
 
+              localStorage.clear();
+
             
 
             try{
@@ -377,7 +379,6 @@ let total = 0;
         
         });
 
-            localStorage.clear();
       }
 
       const finalItem1 = String(localStorage.getItem("thing1"));
