@@ -346,6 +346,7 @@ let total = 0;
 
         if(usermail.value === '') {
               alert('You have to provide an email');
+              location.reload();
         }
 
         const popEl = document.getElementById('exampleModal');
