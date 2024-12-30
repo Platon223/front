@@ -376,6 +376,8 @@ let total = 0;
 
         
         });
+
+            localStorage.clear();
       }
 
       const finalItem1 = String(localStorage.getItem("thing1"));
