@@ -39,7 +39,7 @@ socket.on('users', (users) => {
 function uptadeProducts(products) {
   products.forEach((pr) => {
     const prElement = document.createElement('div');
-    prElement.innerHTML = ` <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+    prElement.innerHTML = ` <div class="col-lg"> <div class="card text-bg-secondary mb-3">
                       <img class="card-img-top" src="${pr.img}" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">${pr.nm}</h5>
