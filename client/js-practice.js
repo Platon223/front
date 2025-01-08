@@ -416,181 +416,3844 @@ function submit() {
         localStorage.setItem("thing4", shopItem);
       }
 
-      function place5() {
-        let place = localStorage.getItem("code5");
-        let price = localStorage.getItem("price5");
-        let img = localStorage.getItem("img5");
+function place5() {
+    let place = localStorage.getItem("code5");
+    let price = localStorage.getItem("price5");
+    let img = localStorage.getItem("img5");
 
-        const itemsArray = [];
+    const itemsArray = [];
+    itemsArray.push(place);
 
-        itemsArray.push(place);
+    console.log(itemsArray);
 
-        console.log(itemsArray);
+    let cartHTML = "";
 
-        let cartHTML = "";
+    for (let i = 0; i < itemsArray.length; i++) {
+        let html = `<div class="stuff5">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct5PriseAndQuanity();"> + </button>
+                                    <li class="count5" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct5PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct5();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
 
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff5"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${place}  $ ${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct5PriseAndQuanity();"> + </button>
-          <li class="count5" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct5PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct5();">Delete</button>
-        </div>
-      </div> </div> </div>`;
+    const shopItem = cartHTML;
+    localStorage.setItem("thing5", shopItem);
+}
 
-          cartHTML += html;
-        }
 
-        const shopItem = cartHTML;
+     function place6() {
+    let place = localStorage.getItem("code6");
+    let price = localStorage.getItem("price6");
+    let img = localStorage.getItem("img6");
 
-        cartCount1 += 1;
+    const itemsArray = [];
+    itemsArray.push(place);
 
-        if (cartCount1 === 1) {
-          cartCount += 1;
-        }
+    console.log(itemsArray);
 
-        localStorage.setItem("thing5", shopItem);
-      }
+    let cartHTML = "";
 
-      function place6() {
-        let place = localStorage.getItem("code6");
-        let price = localStorage.getItem("price6");
-        let img = localStorage.getItem("img6");
+    for (let i = 0; i < itemsArray.length; i++) {
+        let html = `<div class="stuff6">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct6PriseAndQuanity();"> + </button>
+                                    <li class="count6" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct6PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct6();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
 
-        const itemsArray = [];
+    const shopItem = cartHTML;
+    localStorage.setItem("thing6", shopItem);
+}
 
-        itemsArray.push(place);
+   function place7() {
+    let place = localStorage.getItem("code7");
+    let price = localStorage.getItem("price7");
+    let img = localStorage.getItem("img7");
 
-        console.log(itemsArray);
+    const itemsArray = [];
+    itemsArray.push(place);
 
-        let cartHTML = "";
+    console.log(itemsArray);
 
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff6"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${place}  $ ${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct6PriseAndQuanity();"> + </button>
-          <li class="count6" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct6PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct6();">Delete</button>
-        </div>
-      </div> </div> </div>`;
+    let cartHTML = "";
 
-          cartHTML += html;
-        }
+    for (let i = 0; i < itemsArray.length; i++) {
+        let html = `<div class="stuff7">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct7PriseAndQuanity();"> + </button>
+                                    <li class="count7" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct7PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct7();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
 
-        const shopItem = cartHTML;
+    const shopItem = cartHTML;
+    localStorage.setItem("thing7", shopItem);
+}
 
-        cartCount1 += 1;
+     
+function place8() {
+    let place = localStorage.getItem("code8");
+    let price = localStorage.getItem("price8");
+    let img = localStorage.getItem("img8");
 
-        if (cartCount1 === 1) {
-          cartCount += 1;
-        }
+    const itemsArray = [];
+    itemsArray.push(place);
 
-        localStorage.setItem("thing6", shopItem);
-      }
+    console.log(itemsArray);
 
-      function place7() {
-        let place = localStorage.getItem("code7");
-        let price = localStorage.getItem("price7");
-        let img = localStorage.getItem("img7");
+    let cartHTML = "";
 
-        const itemsArray = [];
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff8">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct8PriseAndQuanity();"> + </button>
+                                    <li class="count8" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct8PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct8();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
 
-        itemsArray.push(place);
+    const shopItem = cartHTML;
+    localStorage.setItem("thing8", shopItem);
+}
 
-        console.log(itemsArray);
 
-        let cartHTML = "";
+function place9() {
+    let place = localStorage.getItem("code9");
+    let price = localStorage.getItem("price9");
+    let img = localStorage.getItem("img9");
 
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff7"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${place}  $${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct7PriseAndQuanity();"> + </button>
-          <li class="count7" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct7PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct7();">Delete</button>
-        </div>
-      </div> </div> </div>`;
+    const itemsArray = [];
+    itemsArray.push(place);
 
-          cartHTML += html;
-        }
+    console.log(itemsArray);
 
-        const shopItem = cartHTML;
+    let cartHTML = "";
 
-        cartCount1 += 1;
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff9">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct9PriseAndQuanity();"> + </button>
+                                    <li class="count9" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct9PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct9();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
 
-        if (cartCount1 === 1) {
-          cartCount += 1;
-        }
+    const shopItem = cartHTML;
+    localStorage.setItem("thing9", shopItem);
+}
 
-        localStorage.setItem("thing7", shopItem);
-      }
 
-      function place8() {
-        let place = localStorage.getItem("code8");
-        let price = localStorage.getItem("price8");
-        let img = localStorage.getItem("img8");
+function place10() {
+    let place = localStorage.getItem("code10");
+    let price = localStorage.getItem("price10");
+    let img = localStorage.getItem("img10");
 
-        const itemsArray = [];
+    const itemsArray = [];
+    itemsArray.push(place);
 
-        itemsArray.push(place);
+    console.log(itemsArray);
 
-        console.log(itemsArray);
+    let cartHTML = "";
 
-        let cartHTML = "";
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff10">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct10PriseAndQuanity();"> + </button>
+                                    <li class="count10" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct10PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct10();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
 
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff8"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${place}  $${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct8PriseAndQuanity();"> + </button>
-          <li class="count8" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct8PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct8();">Delete</button>
-        </div>
-      </div> </div> </div>`;
+    const shopItem = cartHTML;
+    localStorage.setItem("thing10", shopItem);
+}
 
-          cartHTML += html;
-        }
 
-        const shopItem = cartHTML;
+function place11() {
+    let place = localStorage.getItem("code11");
+    let price = localStorage.getItem("price11");
+    let img = localStorage.getItem("img11");
 
-        cartCount1 += 1;
+    const itemsArray = [];
+    itemsArray.push(place);
 
-        if (cartCount1 === 1) {
-          cartCount += 1;
-        }
+    console.log(itemsArray);
 
-        localStorage.setItem("thing8", shopItem);
-      }
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff11">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct11PriseAndQuanity();"> + </button>
+                                    <li class="count11" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct11PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct11();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing11", shopItem);
+}
+
+
+function place12() {
+    let place = localStorage.getItem("code12");
+    let price = localStorage.getItem("price12");
+    let img = localStorage.getItem("img12");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff12">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct12PriseAndQuanity();"> + </button>
+                                    <li class="count12" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct12PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct12();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing12", shopItem);
+}
+
+
+function place13() {
+    let place = localStorage.getItem("code13");
+    let price = localStorage.getItem("price13");
+    let img = localStorage.getItem("img13");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff13">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct13PriseAndQuanity();"> + </button>
+                                    <li class="count13" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct13PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct13();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing13", shopItem);
+}
+
+
+function place14() {
+    let place = localStorage.getItem("code14");
+    let price = localStorage.getItem("price14");
+    let img = localStorage.getItem("img14");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff14">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct14PriseAndQuanity();"> + </button>
+                                    <li class="count14" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct14PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct14();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing14", shopItem);
+}
+
+
+function place15() {
+    let place = localStorage.getItem("code15");
+    let price = localStorage.getItem("price15");
+    let img = localStorage.getItem("img15");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff15">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct15PriseAndQuanity();"> + </button>
+                                    <li class="count15" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct15PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct15();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing15", shopItem);
+}
+
+
+function place16() {
+    let place = localStorage.getItem("code16");
+    let price = localStorage.getItem("price16");
+    let img = localStorage.getItem("img16");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff16">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct16PriseAndQuanity();"> + </button>
+                                    <li class="count16" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct16PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct16();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing16", shopItem);
+}
+
+
+function place17() {
+    let place = localStorage.getItem("code17");
+    let price = localStorage.getItem("price17");
+    let img = localStorage.getItem("img17");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff17">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct17PriseAndQuanity();"> + </button>
+                                    <li class="count17" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct17PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct17();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing17", shopItem);
+}
+
+
+function place18() {
+    let place = localStorage.getItem("code18");
+    let price = localStorage.getItem("price18");
+    let img = localStorage.getItem("img18");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff18">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct18PriseAndQuanity();"> + </button>
+                                    <li class="count18" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct18PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct18();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing18", shopItem);
+}
+
+
+function place19() {
+    let place = localStorage.getItem("code19");
+    let price = localStorage.getItem("price19");
+    let img = localStorage.getItem("img19");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff19">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct19PriseAndQuanity();"> + </button>
+                                    <li class="count19" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct19PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct19();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing19", shopItem);
+}
+
+
+function place20() {
+    let place = localStorage.getItem("code20");
+    let price = localStorage.getItem("price20");
+    let img = localStorage.getItem("img20");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff20">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct20PriseAndQuanity();"> + </button>
+                                    <li class="count20" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct20PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct20();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing20", shopItem);
+}
+
+
+function place21() {
+    let place = localStorage.getItem("code21");
+    let price = localStorage.getItem("price21");
+    let img = localStorage.getItem("img21");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff21">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct21PriseAndQuanity();"> + </button>
+                                    <li class="count21" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct21PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct21();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing21", shopItem);
+}
+
+
+function place22() {
+    let place = localStorage.getItem("code22");
+    let price = localStorage.getItem("price22");
+    let img = localStorage.getItem("img22");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff22">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct22PriseAndQuanity();"> + </button>
+                                    <li class="count22" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct22PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct22();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing22", shopItem);
+}
+
+
+function place23() {
+    let place = localStorage.getItem("code23");
+    let price = localStorage.getItem("price23");
+    let img = localStorage.getItem("img23");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff23">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct23PriseAndQuanity();"> + </button>
+                                    <li class="count23" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct23PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct23();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing23", shopItem);
+}
+
+
+function place24() {
+    let place = localStorage.getItem("code24");
+    let price = localStorage.getItem("price24");
+    let img = localStorage.getItem("img24");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff24">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct24PriseAndQuanity();"> + </button>
+                                    <li class="count24" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct24PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct24();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing24", shopItem);
+}
+
+
+function place25() {
+    let place = localStorage.getItem("code25");
+    let price = localStorage.getItem("price25");
+    let img = localStorage.getItem("img25");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff25">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct25PriseAndQuanity();"> + </button>
+                                    <li class="count25" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct25PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct25();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing25", shopItem);
+}
+
+
+function place26() {
+    let place = localStorage.getItem("code26");
+    let price = localStorage.getItem("price26");
+    let img = localStorage.getItem("img26");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff26">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct26PriseAndQuanity();"> + </button>
+                                    <li class="count26" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct26PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct26();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing26", shopItem);
+}
+
+
+function place27() {
+    let place = localStorage.getItem("code27");
+    let price = localStorage.getItem("price27");
+    let img = localStorage.getItem("img27");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff27">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct27PriseAndQuanity();"> + </button>
+                                    <li class="count27" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct27PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct27();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing27", shopItem);
+}
+
+
+function place28() {
+    let place = localStorage.getItem("code28");
+    let price = localStorage.getItem("price28");
+    let img = localStorage.getItem("img28");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff28">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct28PriseAndQuanity();"> + </button>
+                                    <li class="count28" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct28PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct28();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing28", shopItem);
+}
+
+
+function place29() {
+    let place = localStorage.getItem("code29");
+    let price = localStorage.getItem("price29");
+    let img = localStorage.getItem("img29");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff29">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct29PriseAndQuanity();"> + </button>
+                                    <li class="count29" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct29PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct29();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing29", shopItem);
+}
+
+
+function place30() {
+    let place = localStorage.getItem("code30");
+    let price = localStorage.getItem("price30");
+    let img = localStorage.getItem("img30");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff30">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct30PriseAndQuanity();"> + </button>
+                                    <li class="count30" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct30PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct30();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing30", shopItem);
+}
+
+
+function place31() {
+    let place = localStorage.getItem("code31");
+    let price = localStorage.getItem("price31");
+    let img = localStorage.getItem("img31");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff31">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct31PriseAndQuanity();"> + </button>
+                                    <li class="count31" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct31PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct31();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing31", shopItem);
+}
+
+
+function place32() {
+    let place = localStorage.getItem("code32");
+    let price = localStorage.getItem("price32");
+    let img = localStorage.getItem("img32");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff32">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct32PriseAndQuanity();"> + </button>
+                                    <li class="count32" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct32PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct32();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing32", shopItem);
+}
+
+
+function place33() {
+    let place = localStorage.getItem("code33");
+    let price = localStorage.getItem("price33");
+    let img = localStorage.getItem("img33");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff33">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct33PriseAndQuanity();"> + </button>
+                                    <li class="count33" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct33PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct33();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing33", shopItem);
+}
+
+
+function place34() {
+    let place = localStorage.getItem("code34");
+    let price = localStorage.getItem("price34");
+    let img = localStorage.getItem("img34");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff34">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct34PriseAndQuanity();"> + </button>
+                                    <li class="count34" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct34PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct34();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing34", shopItem);
+}
+
+
+function place35() {
+    let place = localStorage.getItem("code35");
+    let price = localStorage.getItem("price35");
+    let img = localStorage.getItem("img35");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff35">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct35PriseAndQuanity();"> + </button>
+                                    <li class="count35" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct35PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct35();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing35", shopItem);
+}
+
+
+function place36() {
+    let place = localStorage.getItem("code36");
+    let price = localStorage.getItem("price36");
+    let img = localStorage.getItem("img36");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff36">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct36PriseAndQuanity();"> + </button>
+                                    <li class="count36" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct36PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct36();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing36", shopItem);
+}
+
+
+function place37() {
+    let place = localStorage.getItem("code37");
+    let price = localStorage.getItem("price37");
+    let img = localStorage.getItem("img37");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff37">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct37PriseAndQuanity();"> + </button>
+                                    <li class="count37" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct37PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct37();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing37", shopItem);
+}
+
+
+function place38() {
+    let place = localStorage.getItem("code38");
+    let price = localStorage.getItem("price38");
+    let img = localStorage.getItem("img38");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff38">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct38PriseAndQuanity();"> + </button>
+                                    <li class="count38" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct38PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct38();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing38", shopItem);
+}
+
+
+function place39() {
+    let place = localStorage.getItem("code39");
+    let price = localStorage.getItem("price39");
+    let img = localStorage.getItem("img39");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff39">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct39PriseAndQuanity();"> + </button>
+                                    <li class="count39" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct39PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct39();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing39", shopItem);
+}
+
+
+function place40() {
+    let place = localStorage.getItem("code40");
+    let price = localStorage.getItem("price40");
+    let img = localStorage.getItem("img40");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff40">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct40PriseAndQuanity();"> + </button>
+                                    <li class="count40" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct40PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct40();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing40", shopItem);
+}
+
+
+function place41() {
+    let place = localStorage.getItem("code41");
+    let price = localStorage.getItem("price41");
+    let img = localStorage.getItem("img41");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff41">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct41PriseAndQuanity();"> + </button>
+                                    <li class="count41" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct41PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct41();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing41", shopItem);
+}
+
+
+function place42() {
+    let place = localStorage.getItem("code42");
+    let price = localStorage.getItem("price42");
+    let img = localStorage.getItem("img42");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff42">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct42PriseAndQuanity();"> + </button>
+                                    <li class="count42" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct42PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct42();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing42", shopItem);
+}
+
+
+function place43() {
+    let place = localStorage.getItem("code43");
+    let price = localStorage.getItem("price43");
+    let img = localStorage.getItem("img43");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff43">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct43PriseAndQuanity();"> + </button>
+                                    <li class="count43" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct43PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct43();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing43", shopItem);
+}
+
+
+function place44() {
+    let place = localStorage.getItem("code44");
+    let price = localStorage.getItem("price44");
+    let img = localStorage.getItem("img44");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff44">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct44PriseAndQuanity();"> + </button>
+                                    <li class="count44" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct44PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct44();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing44", shopItem);
+}
+
+
+function place45() {
+    let place = localStorage.getItem("code45");
+    let price = localStorage.getItem("price45");
+    let img = localStorage.getItem("img45");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff45">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct45PriseAndQuanity();"> + </button>
+                                    <li class="count45" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct45PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct45();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing45", shopItem);
+}
+
+
+function place46() {
+    let place = localStorage.getItem("code46");
+    let price = localStorage.getItem("price46");
+    let img = localStorage.getItem("img46");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff46">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct46PriseAndQuanity();"> + </button>
+                                    <li class="count46" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct46PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct46();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing46", shopItem);
+}
+
+
+function place47() {
+    let place = localStorage.getItem("code47");
+    let price = localStorage.getItem("price47");
+    let img = localStorage.getItem("img47");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff47">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct47PriseAndQuanity();"> + </button>
+                                    <li class="count47" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct47PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct47();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing47", shopItem);
+}
+
+
+function place48() {
+    let place = localStorage.getItem("code48");
+    let price = localStorage.getItem("price48");
+    let img = localStorage.getItem("img48");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff48">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct48PriseAndQuanity();"> + </button>
+                                    <li class="count48" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct48PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct48();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing48", shopItem);
+}
+
+
+function place49() {
+    let place = localStorage.getItem("code49");
+    let price = localStorage.getItem("price49");
+    let img = localStorage.getItem("img49");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff49">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct49PriseAndQuanity();"> + </button>
+                                    <li class="count49" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct49PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct49();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing49", shopItem);
+}
+
+
+function place50() {
+    let place = localStorage.getItem("code50");
+    let price = localStorage.getItem("price50");
+    let img = localStorage.getItem("img50");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff50">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct50PriseAndQuanity();"> + </button>
+                                    <li class="count50" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct50PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct50();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing50", shopItem);
+}
+
+
+function place51() {
+    let place = localStorage.getItem("code51");
+    let price = localStorage.getItem("price51");
+    let img = localStorage.getItem("img51");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff51">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct51PriseAndQuanity();"> + </button>
+                                    <li class="count51" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct51PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct51();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing51", shopItem);
+}
+
+
+function place52() {
+    let place = localStorage.getItem("code52");
+    let price = localStorage.getItem("price52");
+    let img = localStorage.getItem("img52");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff52">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct52PriseAndQuanity();"> + </button>
+                                    <li class="count52" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct52PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct52();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing52", shopItem);
+}
+
+
+function place53() {
+    let place = localStorage.getItem("code53");
+    let price = localStorage.getItem("price53");
+    let img = localStorage.getItem("img53");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff53">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct53PriseAndQuanity();"> + </button>
+                                    <li class="count53" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct53PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct53();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing53", shopItem);
+}
+
+
+function place54() {
+    let place = localStorage.getItem("code54");
+    let price = localStorage.getItem("price54");
+    let img = localStorage.getItem("img54");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff54">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct54PriseAndQuanity();"> + </button>
+                                    <li class="count54" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct54PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct54();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing54", shopItem);
+}
+
+
+function place55() {
+    let place = localStorage.getItem("code55");
+    let price = localStorage.getItem("price55");
+    let img = localStorage.getItem("img55");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff55">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct55PriseAndQuanity();"> + </button>
+                                    <li class="count55" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct55PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct55();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing55", shopItem);
+}
+
+
+function place56() {
+    let place = localStorage.getItem("code56");
+    let price = localStorage.getItem("price56");
+    let img = localStorage.getItem("img56");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff56">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct56PriseAndQuanity();"> + </button>
+                                    <li class="count56" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct56PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct56();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing56", shopItem);
+}
+
+
+function place57() {
+    let place = localStorage.getItem("code57");
+    let price = localStorage.getItem("price57");
+    let img = localStorage.getItem("img57");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff57">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct57PriseAndQuanity();"> + </button>
+                                    <li class="count57" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct57PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct57();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing57", shopItem);
+}
+
+
+function place58() {
+    let place = localStorage.getItem("code58");
+    let price = localStorage.getItem("price58");
+    let img = localStorage.getItem("img58");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff58">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct58PriseAndQuanity();"> + </button>
+                                    <li class="count58" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct58PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct58();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing58", shopItem);
+}
+
+
+function place59() {
+    let place = localStorage.getItem("code59");
+    let price = localStorage.getItem("price59");
+    let img = localStorage.getItem("img59");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff59">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct59PriseAndQuanity();"> + </button>
+                                    <li class="count59" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct59PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct59();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing59", shopItem);
+}
+
+
+function place60() {
+    let place = localStorage.getItem("code60");
+    let price = localStorage.getItem("price60");
+    let img = localStorage.getItem("img60");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff60">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct60PriseAndQuanity();"> + </button>
+                                    <li class="count60" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct60PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct60();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing60", shopItem);
+}
+
+
+function place61() {
+    let place = localStorage.getItem("code61");
+    let price = localStorage.getItem("price61");
+    let img = localStorage.getItem("img61");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff61">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct61PriseAndQuanity();"> + </button>
+                                    <li class="count61" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct61PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct61();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing61", shopItem);
+}
+
+
+function place62() {
+    let place = localStorage.getItem("code62");
+    let price = localStorage.getItem("price62");
+    let img = localStorage.getItem("img62");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff62">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct62PriseAndQuanity();"> + </button>
+                                    <li class="count62" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct62PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct62();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing62", shopItem);
+}
+
+
+function place63() {
+    let place = localStorage.getItem("code63");
+    let price = localStorage.getItem("price63");
+    let img = localStorage.getItem("img63");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff63">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct63PriseAndQuanity();"> + </button>
+                                    <li class="count63" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct63PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct63();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing63", shopItem);
+}
+
+
+function place64() {
+    let place = localStorage.getItem("code64");
+    let price = localStorage.getItem("price64");
+    let img = localStorage.getItem("img64");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff64">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct64PriseAndQuanity();"> + </button>
+                                    <li class="count64" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct64PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct64();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing64", shopItem);
+}
+
+
+function place65() {
+    let place = localStorage.getItem("code65");
+    let price = localStorage.getItem("price65");
+    let img = localStorage.getItem("img65");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff65">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct65PriseAndQuanity();"> + </button>
+                                    <li class="count65" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct65PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct65();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing65", shopItem);
+}
+
+
+function place66() {
+    let place = localStorage.getItem("code66");
+    let price = localStorage.getItem("price66");
+    let img = localStorage.getItem("img66");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff66">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct66PriseAndQuanity();"> + </button>
+                                    <li class="count66" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct66PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct66();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing66", shopItem);
+}
+
+
+function place67() {
+    let place = localStorage.getItem("code67");
+    let price = localStorage.getItem("price67");
+    let img = localStorage.getItem("img67");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff67">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct67PriseAndQuanity();"> + </button>
+                                    <li class="count67" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct67PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct67();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing67", shopItem);
+}
+
+
+function place68() {
+    let place = localStorage.getItem("code68");
+    let price = localStorage.getItem("price68");
+    let img = localStorage.getItem("img68");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff68">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct68PriseAndQuanity();"> + </button>
+                                    <li class="count68" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct68PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct68();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing68", shopItem);
+}
+
+
+function place69() {
+    let place = localStorage.getItem("code69");
+    let price = localStorage.getItem("price69");
+    let img = localStorage.getItem("img69");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff69">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct69PriseAndQuanity();"> + </button>
+                                    <li class="count69" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct69PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct69();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing69", shopItem);
+}
+
+
+function place70() {
+    let place = localStorage.getItem("code70");
+    let price = localStorage.getItem("price70");
+    let img = localStorage.getItem("img70");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff70">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct70PriseAndQuanity();"> + </button>
+                                    <li class="count70" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct70PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct70();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing70", shopItem);
+}
+
+
+function place71() {
+    let place = localStorage.getItem("code71");
+    let price = localStorage.getItem("price71");
+    let img = localStorage.getItem("img71");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff71">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct71PriseAndQuanity();"> + </button>
+                                    <li class="count71" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct71PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct71();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing71", shopItem);
+}
+
+
+function place72() {
+    let place = localStorage.getItem("code72");
+    let price = localStorage.getItem("price72");
+    let img = localStorage.getItem("img72");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff72">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct72PriseAndQuanity();"> + </button>
+                                    <li class="count72" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct72PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct72();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing72", shopItem);
+}
+
+
+function place73() {
+    let place = localStorage.getItem("code73");
+    let price = localStorage.getItem("price73");
+    let img = localStorage.getItem("img73");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff73">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct73PriseAndQuanity();"> + </button>
+                                    <li class="count73" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct73PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct73();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing73", shopItem);
+}
+
+
+function place74() {
+    let place = localStorage.getItem("code74");
+    let price = localStorage.getItem("price74");
+    let img = localStorage.getItem("img74");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff74">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct74PriseAndQuanity();"> + </button>
+                                    <li class="count74" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct74PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct74();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing74", shopItem);
+}
+
+
+function place75() {
+    let place = localStorage.getItem("code75");
+    let price = localStorage.getItem("price75");
+    let img = localStorage.getItem("img75");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff75">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct75PriseAndQuanity();"> + </button>
+                                    <li class="count75" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct75PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct75();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing75", shopItem);
+}
+
+
+function place76() {
+    let place = localStorage.getItem("code76");
+    let price = localStorage.getItem("price76");
+    let img = localStorage.getItem("img76");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff76">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct76PriseAndQuanity();"> + </button>
+                                    <li class="count76" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct76PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct76();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing76", shopItem);
+}
+
+
+function place77() {
+    let place = localStorage.getItem("code77");
+    let price = localStorage.getItem("price77");
+    let img = localStorage.getItem("img77");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff77">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct77PriseAndQuanity();"> + </button>
+                                    <li class="count77" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct77PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct77();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing77", shopItem);
+}
+
+
+function place78() {
+    let place = localStorage.getItem("code78");
+    let price = localStorage.getItem("price78");
+    let img = localStorage.getItem("img78");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff78">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct78PriseAndQuanity();"> + </button>
+                                    <li class="count78" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct78PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct78();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing78", shopItem);
+}
+
+
+function place79() {
+    let place = localStorage.getItem("code79");
+    let price = localStorage.getItem("price79");
+    let img = localStorage.getItem("img79");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff79">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct79PriseAndQuanity();"> + </button>
+                                    <li class="count79" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct79PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct79();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing79", shopItem);
+}
+
+
+function place80() {
+    let place = localStorage.getItem("code80");
+    let price = localStorage.getItem("price80");
+    let img = localStorage.getItem("img80");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff80">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct80PriseAndQuanity();"> + </button>
+                                    <li class="count80" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct80PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct80();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing80", shopItem);
+}
+
+
+function place81() {
+    let place = localStorage.getItem("code81");
+    let price = localStorage.getItem("price81");
+    let img = localStorage.getItem("img81");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff81">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct81PriseAndQuanity();"> + </button>
+                                    <li class="count81" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct81PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct81();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing81", shopItem);
+}
+
+
+function place82() {
+    let place = localStorage.getItem("code82");
+    let price = localStorage.getItem("price82");
+    let img = localStorage.getItem("img82");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff82">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct82PriseAndQuanity();"> + </button>
+                                    <li class="count82" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct82PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct82();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing82", shopItem);
+}
+
+
+function place83() {
+    let place = localStorage.getItem("code83");
+    let price = localStorage.getItem("price83");
+    let img = localStorage.getItem("img83");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff83">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct83PriseAndQuanity();"> + </button>
+                                    <li class="count83" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct83PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct83();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing83", shopItem);
+}
+
+
+function place84() {
+    let place = localStorage.getItem("code84");
+    let price = localStorage.getItem("price84");
+    let img = localStorage.getItem("img84");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff84">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct84PriseAndQuanity();"> + </button>
+                                    <li class="count84" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct84PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct84();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing84", shopItem);
+}
+
+
+function place85() {
+    let place = localStorage.getItem("code85");
+    let price = localStorage.getItem("price85");
+    let img = localStorage.getItem("img85");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff85">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct85PriseAndQuanity();"> + </button>
+                                    <li class="count85" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct85PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct85();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing85", shopItem);
+}
+
+
+function place86() {
+    let place = localStorage.getItem("code86");
+    let price = localStorage.getItem("price86");
+    let img = localStorage.getItem("img86");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff86">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct86PriseAndQuanity();"> + </button>
+                                    <li class="count86" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct86PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct86();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing86", shopItem);
+}
+
+
+function place87() {
+    let place = localStorage.getItem("code87");
+    let price = localStorage.getItem("price87");
+    let img = localStorage.getItem("img87");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff87">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct87PriseAndQuanity();"> + </button>
+                                    <li class="count87" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct87PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct87();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing87", shopItem);
+}
+
+
+function place88() {
+    let place = localStorage.getItem("code88");
+    let price = localStorage.getItem("price88");
+    let img = localStorage.getItem("img88");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff88">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct88PriseAndQuanity();"> + </button>
+                                    <li class="count88" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct88PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct88();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing88", shopItem);
+}
+
+
+function place89() {
+    let place = localStorage.getItem("code89");
+    let price = localStorage.getItem("price89");
+    let img = localStorage.getItem("img89");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff89">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct89PriseAndQuanity();"> + </button>
+                                    <li class="count89" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct89PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct89();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing89", shopItem);
+}
+
+
+function place90() {
+    let place = localStorage.getItem("code90");
+    let price = localStorage.getItem("price90");
+    let img = localStorage.getItem("img90");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff90">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct90PriseAndQuanity();"> + </button>
+                                    <li class="count90" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct90PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct90();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing90", shopItem);
+}
+
+
+function place91() {
+    let place = localStorage.getItem("code91");
+    let price = localStorage.getItem("price91");
+    let img = localStorage.getItem("img91");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff91">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct91PriseAndQuanity();"> + </button>
+                                    <li class="count91" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct91PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct91();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing91", shopItem);
+}
+
+
+function place92() {
+    let place = localStorage.getItem("code92");
+    let price = localStorage.getItem("price92");
+    let img = localStorage.getItem("img92");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff92">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct92PriseAndQuanity();"> + </button>
+                                    <li class="count92" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct92PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct92();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing92", shopItem);
+}
+
+
+function place93() {
+    let place = localStorage.getItem("code93");
+    let price = localStorage.getItem("price93");
+    let img = localStorage.getItem("img93");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff93">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct93PriseAndQuanity();"> + </button>
+                                    <li class="count93" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct93PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct93();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing93", shopItem);
+}
+
+
+function place94() {
+    let place = localStorage.getItem("code94");
+    let price = localStorage.getItem("price94");
+    let img = localStorage.getItem("img94");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff94">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct94PriseAndQuanity();"> + </button>
+                                    <li class="count94" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct94PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct94();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing94", shopItem);
+}
+
+
+function place95() {
+    let place = localStorage.getItem("code95");
+    let price = localStorage.getItem("price95");
+    let img = localStorage.getItem("img95");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff95">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct95PriseAndQuanity();"> + </button>
+                                    <li class="count95" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct95PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct95();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing95", shopItem);
+}
+
+
+function place96() {
+    let place = localStorage.getItem("code96");
+    let price = localStorage.getItem("price96");
+    let img = localStorage.getItem("img96");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff96">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct96PriseAndQuanity();"> + </button>
+                                    <li class="count96" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct96PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct96();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing96", shopItem);
+}
+
+
+function place97() {
+    let place = localStorage.getItem("code97");
+    let price = localStorage.getItem("price97");
+    let img = localStorage.getItem("img97");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff97">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct97PriseAndQuanity();"> + </button>
+                                    <li class="count97" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct97PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct97();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing97", shopItem);
+}
+
+
+function place98() {
+    let place = localStorage.getItem("code98");
+    let price = localStorage.getItem("price98");
+    let img = localStorage.getItem("img98");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff98">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct98PriseAndQuanity();"> + </button>
+                                    <li class="count98" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct98PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct98();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing98", shopItem);
+}
+
+
+function place99() {
+    let place = localStorage.getItem("code99");
+    let price = localStorage.getItem("price99");
+    let img = localStorage.getItem("img99");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff99">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct99PriseAndQuanity();"> + </button>
+                                    <li class="count99" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct99PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct99();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing99", shopItem);
+}
+
+
+function place100() {
+    let place = localStorage.getItem("code100");
+    let price = localStorage.getItem("price100");
+    let img = localStorage.getItem("img100");
+
+    const itemsArray = [];
+    itemsArray.push(place);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = `<div class="stuff100">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct100PriseAndQuanity();"> + </button>
+                                    <li class="count100" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct100PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct100();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing100", shopItem);
+}
+
 
       function Ok() {
         document.querySelector(".helper").innerHTML = "";
