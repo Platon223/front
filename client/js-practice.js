@@ -242,184 +242,10 @@ function submit() {
         document.querySelector(".uptadation").innerHTML = uptades;
       }
 
-      function place1(nm, price, img) {
-       
-
-        localStorage.setItem('price1', price);
-        localStorage.setItem('code1', nm);
-        localStorage.setItem('img1', img);
-
-        
-
-        const itemsArray = [];
-
-        itemsArray.push(nm);
-
-        let cartHTML = "";
-
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff1"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${nm}  $ ${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct1PriseAndQuanity();"> + </button>
-          <li class="count1" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct1PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct1();">Delete</button>
-        </div>
-      </div> </div> </div>`;
-
-          cartHTML += html;
-        }
-
-        const shopItem = cartHTML;
-
-        cartCount1 += 1;
-
-        if (cartCount1 === 1) {
-          cartCount += 1;
-        }
-
-        localStorage.setItem("thing1", shopItem);
-      }
-
- function place2(nm, price, img) {
-       
-
-        localStorage.setItem('price2', price);
-        localStorage.setItem('code2', nm);
-        localStorage.setItem('img2', img);
-
-        
-
-        const itemsArray = [];
-
-        itemsArray.push(nm);
-
-        let cartHTML = "";
-
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff2"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${nm}  $ ${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct2PriseAndQuanity();"> + </button>
-          <li class="count2" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct2PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct2();">Delete</button>
-        </div>
-      </div> </div> </div>`;
-
-          cartHTML += html;
-        }
-
-        const shopItem = cartHTML;
-
-       
-
-        localStorage.setItem("thing2", shopItem);
-      }
-
-
- function place3(nm, price, img) {
-       
-
-        localStorage.setItem('price3', price);
-        localStorage.setItem('code3', nm);
-        localStorage.setItem('img3', img);
-
-        
-
-        const itemsArray = [];
-
-        itemsArray.push(nm);
-
-        let cartHTML = "";
-
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff3"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${nm}  $ ${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct3PriseAndQuanity();"> + </button>
-          <li class="count3" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct3PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct3();">Delete</button>
-        </div>
-      </div> </div> </div>`;
-
-          cartHTML += html;
-        }
-
-        const shopItem = cartHTML;
-
-       
-
-        localStorage.setItem("thing3", shopItem);
-      }
-
-
-       function place4(nm, price, img) {
-       
-
-        localStorage.setItem('price4', price);
-        localStorage.setItem('code4', nm);
-        localStorage.setItem('img4', img);
-
-        
-
-        const itemsArray = [];
-
-        itemsArray.push(nm);
-
-        let cartHTML = "";
-
-        for (let i = 0; i < itemsArray.length; i++) {
-          let html = `<div class="stuff4"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
-        <img src="${img}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${nm}  $ ${price}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <button class="btn btn-success" onclick="addproduct4PriseAndQuanity();"> + </button>
-          <li class="count4" style="font-size: 25px;"></li>
-          <button class="btn btn-danger" onclick="decproduct4PriseAndQuanity();"> - </button>
-        </ul>
-        <div class="card-body">
-          <button onclick="removeProduct4();">Delete</button>
-        </div>
-      </div> </div> </div>`;
-
-          cartHTML += html;
-        }
-
-        const shopItem = cartHTML;
-
-      
-
-        localStorage.setItem("thing4", shopItem);
-      }
-
-function place5() {
-    let place = localStorage.getItem("code5");
-    let price = localStorage.getItem("price5");
-    let img = localStorage.getItem("img5");
+function place5(nm, price, img) {
+    localStorage.setItem("code5", nm);
+    localStorage.setItem("price5", price);
+    localStorage.setItem("img5", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -428,13 +254,13 @@ function place5() {
 
     let cartHTML = "";
 
-    for (let i = 0; i < itemsArray.length; i++) {
+    for (let j = 0; j < itemsArray.length; j++) {
         let html = `<div class="stuff5">
                         <div class="col-lg">
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -455,11 +281,10 @@ function place5() {
     localStorage.setItem("thing5", shopItem);
 }
 
-
-     function place6() {
-    let place = localStorage.getItem("code6");
-    let price = localStorage.getItem("price6");
-    let img = localStorage.getItem("img6");
+function place6(nm, price, img) {
+    localStorage.setItem("code6", nm);
+    localStorage.setItem("price6", price);
+    localStorage.setItem("img6", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -468,13 +293,13 @@ function place5() {
 
     let cartHTML = "";
 
-    for (let i = 0; i < itemsArray.length; i++) {
+    for (let j = 0; j < itemsArray.length; j++) {
         let html = `<div class="stuff6">
                         <div class="col-lg">
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -495,10 +320,10 @@ function place5() {
     localStorage.setItem("thing6", shopItem);
 }
 
-   function place7() {
-    let place = localStorage.getItem("code7");
-    let price = localStorage.getItem("price7");
-    let img = localStorage.getItem("img7");
+function place7(nm, price, img) {
+    localStorage.setItem("code7", nm);
+    localStorage.setItem("price7", price);
+    localStorage.setItem("img7", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -507,13 +332,13 @@ function place5() {
 
     let cartHTML = "";
 
-    for (let i = 0; i < itemsArray.length; i++) {
+    for (let j = 0; j < itemsArray.length; j++) {
         let html = `<div class="stuff7">
                         <div class="col-lg">
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -534,11 +359,10 @@ function place5() {
     localStorage.setItem("thing7", shopItem);
 }
 
-     
-function place8() {
-    let place = localStorage.getItem("code8");
-    let price = localStorage.getItem("price8");
-    let img = localStorage.getItem("img8");
+function place8(nm, price, img) {
+    localStorage.setItem("code8", nm);
+    localStorage.setItem("price8", price);
+    localStorage.setItem("img8", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -553,7 +377,7 @@ function place8() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -574,11 +398,10 @@ function place8() {
     localStorage.setItem("thing8", shopItem);
 }
 
-
-function place9() {
-    let place = localStorage.getItem("code9");
-    let price = localStorage.getItem("price9");
-    let img = localStorage.getItem("img9");
+function place9(nm, price, img) {
+    localStorage.setItem("code9", nm);
+    localStorage.setItem("price9", price);
+    localStorage.setItem("img9", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -593,7 +416,7 @@ function place9() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -614,11 +437,10 @@ function place9() {
     localStorage.setItem("thing9", shopItem);
 }
 
-
-function place10() {
-    let place = localStorage.getItem("code10");
-    let price = localStorage.getItem("price10");
-    let img = localStorage.getItem("img10");
+function place10(nm, price, img) {
+    localStorage.setItem("code10", nm);
+    localStorage.setItem("price10", price);
+    localStorage.setItem("img10", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -633,7 +455,7 @@ function place10() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -654,11 +476,10 @@ function place10() {
     localStorage.setItem("thing10", shopItem);
 }
 
-
-function place11() {
-    let place = localStorage.getItem("code11");
-    let price = localStorage.getItem("price11");
-    let img = localStorage.getItem("img11");
+function place11(nm, price, img) {
+    localStorage.setItem("code11", nm);
+    localStorage.setItem("price11", price);
+    localStorage.setItem("img11", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -673,7 +494,7 @@ function place11() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -694,11 +515,10 @@ function place11() {
     localStorage.setItem("thing11", shopItem);
 }
 
-
-function place12() {
-    let place = localStorage.getItem("code12");
-    let price = localStorage.getItem("price12");
-    let img = localStorage.getItem("img12");
+function place12(nm, price, img) {
+    localStorage.setItem("code12", nm);
+    localStorage.setItem("price12", price);
+    localStorage.setItem("img12", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -713,7 +533,7 @@ function place12() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -734,11 +554,10 @@ function place12() {
     localStorage.setItem("thing12", shopItem);
 }
 
-
-function place13() {
-    let place = localStorage.getItem("code13");
-    let price = localStorage.getItem("price13");
-    let img = localStorage.getItem("img13");
+function place13(nm, price, img) {
+    localStorage.setItem("code13", nm);
+    localStorage.setItem("price13", price);
+    localStorage.setItem("img13", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -753,7 +572,7 @@ function place13() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -774,11 +593,10 @@ function place13() {
     localStorage.setItem("thing13", shopItem);
 }
 
-
-function place14() {
-    let place = localStorage.getItem("code14");
-    let price = localStorage.getItem("price14");
-    let img = localStorage.getItem("img14");
+function place14(nm, price, img) {
+    localStorage.setItem("code14", nm);
+    localStorage.setItem("price14", price);
+    localStorage.setItem("img14", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -793,7 +611,7 @@ function place14() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -814,11 +632,10 @@ function place14() {
     localStorage.setItem("thing14", shopItem);
 }
 
-
-function place15() {
-    let place = localStorage.getItem("code15");
-    let price = localStorage.getItem("price15");
-    let img = localStorage.getItem("img15");
+function place15(nm, price, img) {
+    localStorage.setItem("code15", nm);
+    localStorage.setItem("price15", price);
+    localStorage.setItem("img15", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -833,7 +650,7 @@ function place15() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -854,11 +671,10 @@ function place15() {
     localStorage.setItem("thing15", shopItem);
 }
 
-
-function place16() {
-    let place = localStorage.getItem("code16");
-    let price = localStorage.getItem("price16");
-    let img = localStorage.getItem("img16");
+function place16(nm, price, img) {
+    localStorage.setItem("code16", nm);
+    localStorage.setItem("price16", price);
+    localStorage.setItem("img16", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -873,7 +689,7 @@ function place16() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -894,11 +710,10 @@ function place16() {
     localStorage.setItem("thing16", shopItem);
 }
 
-
-function place17() {
-    let place = localStorage.getItem("code17");
-    let price = localStorage.getItem("price17");
-    let img = localStorage.getItem("img17");
+function place17(nm, price, img) {
+    localStorage.setItem("code17", nm);
+    localStorage.setItem("price17", price);
+    localStorage.setItem("img17", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -913,7 +728,7 @@ function place17() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -934,11 +749,10 @@ function place17() {
     localStorage.setItem("thing17", shopItem);
 }
 
-
-function place18() {
-    let place = localStorage.getItem("code18");
-    let price = localStorage.getItem("price18");
-    let img = localStorage.getItem("img18");
+function place18(nm, price, img) {
+    localStorage.setItem("code18", nm);
+    localStorage.setItem("price18", price);
+    localStorage.setItem("img18", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -953,7 +767,7 @@ function place18() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -974,11 +788,10 @@ function place18() {
     localStorage.setItem("thing18", shopItem);
 }
 
-
-function place19() {
-    let place = localStorage.getItem("code19");
-    let price = localStorage.getItem("price19");
-    let img = localStorage.getItem("img19");
+function place19(nm, price, img) {
+    localStorage.setItem("code19", nm);
+    localStorage.setItem("price19", price);
+    localStorage.setItem("img19", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -993,7 +806,7 @@ function place19() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1014,11 +827,10 @@ function place19() {
     localStorage.setItem("thing19", shopItem);
 }
 
-
-function place20() {
-    let place = localStorage.getItem("code20");
-    let price = localStorage.getItem("price20");
-    let img = localStorage.getItem("img20");
+function place20(nm, price, img) {
+    localStorage.setItem("code20", nm);
+    localStorage.setItem("price20", price);
+    localStorage.setItem("img20", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1033,7 +845,7 @@ function place20() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1054,11 +866,10 @@ function place20() {
     localStorage.setItem("thing20", shopItem);
 }
 
-
-function place21() {
-    let place = localStorage.getItem("code21");
-    let price = localStorage.getItem("price21");
-    let img = localStorage.getItem("img21");
+function place21(nm, price, img) {
+    localStorage.setItem("code21", nm);
+    localStorage.setItem("price21", price);
+    localStorage.setItem("img21", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1073,7 +884,7 @@ function place21() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1094,11 +905,10 @@ function place21() {
     localStorage.setItem("thing21", shopItem);
 }
 
-
-function place22() {
-    let place = localStorage.getItem("code22");
-    let price = localStorage.getItem("price22");
-    let img = localStorage.getItem("img22");
+function place22(nm, price, img) {
+    localStorage.setItem("code22", nm);
+    localStorage.setItem("price22", price);
+    localStorage.setItem("img22", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1113,7 +923,7 @@ function place22() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1134,11 +944,10 @@ function place22() {
     localStorage.setItem("thing22", shopItem);
 }
 
-
-function place23() {
-    let place = localStorage.getItem("code23");
-    let price = localStorage.getItem("price23");
-    let img = localStorage.getItem("img23");
+function place23(nm, price, img) {
+    localStorage.setItem("code23", nm);
+    localStorage.setItem("price23", price);
+    localStorage.setItem("img23", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1153,7 +962,7 @@ function place23() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1174,11 +983,10 @@ function place23() {
     localStorage.setItem("thing23", shopItem);
 }
 
-
-function place24() {
-    let place = localStorage.getItem("code24");
-    let price = localStorage.getItem("price24");
-    let img = localStorage.getItem("img24");
+function place24(nm, price, img) {
+    localStorage.setItem("code24", nm);
+    localStorage.setItem("price24", price);
+    localStorage.setItem("img24", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1193,7 +1001,7 @@ function place24() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1214,11 +1022,10 @@ function place24() {
     localStorage.setItem("thing24", shopItem);
 }
 
-
-function place25() {
-    let place = localStorage.getItem("code25");
-    let price = localStorage.getItem("price25");
-    let img = localStorage.getItem("img25");
+function place25(nm, price, img) {
+    localStorage.setItem("code25", nm);
+    localStorage.setItem("price25", price);
+    localStorage.setItem("img25", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1233,7 +1040,7 @@ function place25() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1254,11 +1061,10 @@ function place25() {
     localStorage.setItem("thing25", shopItem);
 }
 
-
-function place26() {
-    let place = localStorage.getItem("code26");
-    let price = localStorage.getItem("price26");
-    let img = localStorage.getItem("img26");
+function place26(nm, price, img) {
+    localStorage.setItem("code26", nm);
+    localStorage.setItem("price26", price);
+    localStorage.setItem("img26", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1273,7 +1079,7 @@ function place26() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1294,11 +1100,10 @@ function place26() {
     localStorage.setItem("thing26", shopItem);
 }
 
-
-function place27() {
-    let place = localStorage.getItem("code27");
-    let price = localStorage.getItem("price27");
-    let img = localStorage.getItem("img27");
+function place27(nm, price, img) {
+    localStorage.setItem("code27", nm);
+    localStorage.setItem("price27", price);
+    localStorage.setItem("img27", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1313,7 +1118,7 @@ function place27() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1334,11 +1139,10 @@ function place27() {
     localStorage.setItem("thing27", shopItem);
 }
 
-
-function place28() {
-    let place = localStorage.getItem("code28");
-    let price = localStorage.getItem("price28");
-    let img = localStorage.getItem("img28");
+function place28(nm, price, img) {
+    localStorage.setItem("code28", nm);
+    localStorage.setItem("price28", price);
+    localStorage.setItem("img28", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1353,7 +1157,7 @@ function place28() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1374,11 +1178,10 @@ function place28() {
     localStorage.setItem("thing28", shopItem);
 }
 
-
-function place29() {
-    let place = localStorage.getItem("code29");
-    let price = localStorage.getItem("price29");
-    let img = localStorage.getItem("img29");
+function place29(nm, price, img) {
+    localStorage.setItem("code29", nm);
+    localStorage.setItem("price29", price);
+    localStorage.setItem("img29", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1393,7 +1196,7 @@ function place29() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1414,11 +1217,10 @@ function place29() {
     localStorage.setItem("thing29", shopItem);
 }
 
-
-function place30() {
-    let place = localStorage.getItem("code30");
-    let price = localStorage.getItem("price30");
-    let img = localStorage.getItem("img30");
+function place30(nm, price, img) {
+    localStorage.setItem("code30", nm);
+    localStorage.setItem("price30", price);
+    localStorage.setItem("img30", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1433,7 +1235,7 @@ function place30() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1454,11 +1256,10 @@ function place30() {
     localStorage.setItem("thing30", shopItem);
 }
 
-
-function place31() {
-    let place = localStorage.getItem("code31");
-    let price = localStorage.getItem("price31");
-    let img = localStorage.getItem("img31");
+function place31(nm, price, img) {
+    localStorage.setItem("code31", nm);
+    localStorage.setItem("price31", price);
+    localStorage.setItem("img31", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1473,7 +1274,7 @@ function place31() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1494,11 +1295,10 @@ function place31() {
     localStorage.setItem("thing31", shopItem);
 }
 
-
-function place32() {
-    let place = localStorage.getItem("code32");
-    let price = localStorage.getItem("price32");
-    let img = localStorage.getItem("img32");
+function place32(nm, price, img) {
+    localStorage.setItem("code32", nm);
+    localStorage.setItem("price32", price);
+    localStorage.setItem("img32", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1513,7 +1313,7 @@ function place32() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1534,11 +1334,10 @@ function place32() {
     localStorage.setItem("thing32", shopItem);
 }
 
-
-function place33() {
-    let place = localStorage.getItem("code33");
-    let price = localStorage.getItem("price33");
-    let img = localStorage.getItem("img33");
+function place33(nm, price, img) {
+    localStorage.setItem("code33", nm);
+    localStorage.setItem("price33", price);
+    localStorage.setItem("img33", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1553,7 +1352,7 @@ function place33() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1574,11 +1373,10 @@ function place33() {
     localStorage.setItem("thing33", shopItem);
 }
 
-
-function place34() {
-    let place = localStorage.getItem("code34");
-    let price = localStorage.getItem("price34");
-    let img = localStorage.getItem("img34");
+function place34(nm, price, img) {
+    localStorage.setItem("code34", nm);
+    localStorage.setItem("price34", price);
+    localStorage.setItem("img34", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1593,7 +1391,7 @@ function place34() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1614,11 +1412,10 @@ function place34() {
     localStorage.setItem("thing34", shopItem);
 }
 
-
-function place35() {
-    let place = localStorage.getItem("code35");
-    let price = localStorage.getItem("price35");
-    let img = localStorage.getItem("img35");
+function place35(nm, price, img) {
+    localStorage.setItem("code35", nm);
+    localStorage.setItem("price35", price);
+    localStorage.setItem("img35", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1633,7 +1430,7 @@ function place35() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1654,11 +1451,10 @@ function place35() {
     localStorage.setItem("thing35", shopItem);
 }
 
-
-function place36() {
-    let place = localStorage.getItem("code36");
-    let price = localStorage.getItem("price36");
-    let img = localStorage.getItem("img36");
+function place36(nm, price, img) {
+    localStorage.setItem("code36", nm);
+    localStorage.setItem("price36", price);
+    localStorage.setItem("img36", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1673,7 +1469,7 @@ function place36() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1694,11 +1490,10 @@ function place36() {
     localStorage.setItem("thing36", shopItem);
 }
 
-
-function place37() {
-    let place = localStorage.getItem("code37");
-    let price = localStorage.getItem("price37");
-    let img = localStorage.getItem("img37");
+function place37(nm, price, img) {
+    localStorage.setItem("code37", nm);
+    localStorage.setItem("price37", price);
+    localStorage.setItem("img37", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1713,7 +1508,7 @@ function place37() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1734,11 +1529,10 @@ function place37() {
     localStorage.setItem("thing37", shopItem);
 }
 
-
-function place38() {
-    let place = localStorage.getItem("code38");
-    let price = localStorage.getItem("price38");
-    let img = localStorage.getItem("img38");
+function place38(nm, price, img) {
+    localStorage.setItem("code38", nm);
+    localStorage.setItem("price38", price);
+    localStorage.setItem("img38", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1753,7 +1547,7 @@ function place38() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1774,11 +1568,10 @@ function place38() {
     localStorage.setItem("thing38", shopItem);
 }
 
-
-function place39() {
-    let place = localStorage.getItem("code39");
-    let price = localStorage.getItem("price39");
-    let img = localStorage.getItem("img39");
+function place39(nm, price, img) {
+    localStorage.setItem("code39", nm);
+    localStorage.setItem("price39", price);
+    localStorage.setItem("img39", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1793,7 +1586,7 @@ function place39() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1814,11 +1607,10 @@ function place39() {
     localStorage.setItem("thing39", shopItem);
 }
 
-
-function place40() {
-    let place = localStorage.getItem("code40");
-    let price = localStorage.getItem("price40");
-    let img = localStorage.getItem("img40");
+function place40(nm, price, img) {
+    localStorage.setItem("code40", nm);
+    localStorage.setItem("price40", price);
+    localStorage.setItem("img40", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1833,7 +1625,7 @@ function place40() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1854,11 +1646,10 @@ function place40() {
     localStorage.setItem("thing40", shopItem);
 }
 
-
-function place41() {
-    let place = localStorage.getItem("code41");
-    let price = localStorage.getItem("price41");
-    let img = localStorage.getItem("img41");
+function place41(nm, price, img) {
+    localStorage.setItem("code41", nm);
+    localStorage.setItem("price41", price);
+    localStorage.setItem("img41", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1873,7 +1664,7 @@ function place41() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1894,11 +1685,10 @@ function place41() {
     localStorage.setItem("thing41", shopItem);
 }
 
-
-function place42() {
-    let place = localStorage.getItem("code42");
-    let price = localStorage.getItem("price42");
-    let img = localStorage.getItem("img42");
+function place42(nm, price, img) {
+    localStorage.setItem("code42", nm);
+    localStorage.setItem("price42", price);
+    localStorage.setItem("img42", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1913,7 +1703,7 @@ function place42() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1934,11 +1724,10 @@ function place42() {
     localStorage.setItem("thing42", shopItem);
 }
 
-
-function place43() {
-    let place = localStorage.getItem("code43");
-    let price = localStorage.getItem("price43");
-    let img = localStorage.getItem("img43");
+function place43(nm, price, img) {
+    localStorage.setItem("code43", nm);
+    localStorage.setItem("price43", price);
+    localStorage.setItem("img43", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1953,7 +1742,7 @@ function place43() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -1974,11 +1763,10 @@ function place43() {
     localStorage.setItem("thing43", shopItem);
 }
 
-
-function place44() {
-    let place = localStorage.getItem("code44");
-    let price = localStorage.getItem("price44");
-    let img = localStorage.getItem("img44");
+function place44(nm, price, img) {
+    localStorage.setItem("code44", nm);
+    localStorage.setItem("price44", price);
+    localStorage.setItem("img44", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -1993,7 +1781,7 @@ function place44() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2014,11 +1802,10 @@ function place44() {
     localStorage.setItem("thing44", shopItem);
 }
 
-
-function place45() {
-    let place = localStorage.getItem("code45");
-    let price = localStorage.getItem("price45");
-    let img = localStorage.getItem("img45");
+function place45(nm, price, img) {
+    localStorage.setItem("code45", nm);
+    localStorage.setItem("price45", price);
+    localStorage.setItem("img45", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2033,7 +1820,7 @@ function place45() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2054,11 +1841,10 @@ function place45() {
     localStorage.setItem("thing45", shopItem);
 }
 
-
-function place46() {
-    let place = localStorage.getItem("code46");
-    let price = localStorage.getItem("price46");
-    let img = localStorage.getItem("img46");
+function place46(nm, price, img) {
+    localStorage.setItem("code46", nm);
+    localStorage.setItem("price46", price);
+    localStorage.setItem("img46", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2073,7 +1859,7 @@ function place46() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2094,11 +1880,10 @@ function place46() {
     localStorage.setItem("thing46", shopItem);
 }
 
-
-function place47() {
-    let place = localStorage.getItem("code47");
-    let price = localStorage.getItem("price47");
-    let img = localStorage.getItem("img47");
+function place47(nm, price, img) {
+    localStorage.setItem("code47", nm);
+    localStorage.setItem("price47", price);
+    localStorage.setItem("img47", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2113,7 +1898,7 @@ function place47() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2134,11 +1919,10 @@ function place47() {
     localStorage.setItem("thing47", shopItem);
 }
 
-
-function place48() {
-    let place = localStorage.getItem("code48");
-    let price = localStorage.getItem("price48");
-    let img = localStorage.getItem("img48");
+function place48(nm, price, img) {
+    localStorage.setItem("code48", nm);
+    localStorage.setItem("price48", price);
+    localStorage.setItem("img48", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2153,7 +1937,7 @@ function place48() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2174,11 +1958,10 @@ function place48() {
     localStorage.setItem("thing48", shopItem);
 }
 
-
-function place49() {
-    let place = localStorage.getItem("code49");
-    let price = localStorage.getItem("price49");
-    let img = localStorage.getItem("img49");
+function place49(nm, price, img) {
+    localStorage.setItem("code49", nm);
+    localStorage.setItem("price49", price);
+    localStorage.setItem("img49", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2193,7 +1976,7 @@ function place49() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2214,11 +1997,10 @@ function place49() {
     localStorage.setItem("thing49", shopItem);
 }
 
-
-function place50() {
-    let place = localStorage.getItem("code50");
-    let price = localStorage.getItem("price50");
-    let img = localStorage.getItem("img50");
+function place50(nm, price, img) {
+    localStorage.setItem("code50", nm);
+    localStorage.setItem("price50", price);
+    localStorage.setItem("img50", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2233,7 +2015,7 @@ function place50() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2254,11 +2036,10 @@ function place50() {
     localStorage.setItem("thing50", shopItem);
 }
 
-
-function place51() {
-    let place = localStorage.getItem("code51");
-    let price = localStorage.getItem("price51");
-    let img = localStorage.getItem("img51");
+function place51(nm, price, img) {
+    localStorage.setItem("code51", nm);
+    localStorage.setItem("price51", price);
+    localStorage.setItem("img51", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2273,7 +2054,7 @@ function place51() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2294,11 +2075,10 @@ function place51() {
     localStorage.setItem("thing51", shopItem);
 }
 
-
-function place52() {
-    let place = localStorage.getItem("code52");
-    let price = localStorage.getItem("price52");
-    let img = localStorage.getItem("img52");
+function place52(nm, price, img) {
+    localStorage.setItem("code52", nm);
+    localStorage.setItem("price52", price);
+    localStorage.setItem("img52", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2313,7 +2093,7 @@ function place52() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2334,11 +2114,10 @@ function place52() {
     localStorage.setItem("thing52", shopItem);
 }
 
-
-function place53() {
-    let place = localStorage.getItem("code53");
-    let price = localStorage.getItem("price53");
-    let img = localStorage.getItem("img53");
+function place53(nm, price, img) {
+    localStorage.setItem("code53", nm);
+    localStorage.setItem("price53", price);
+    localStorage.setItem("img53", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2353,7 +2132,7 @@ function place53() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2374,11 +2153,10 @@ function place53() {
     localStorage.setItem("thing53", shopItem);
 }
 
-
-function place54() {
-    let place = localStorage.getItem("code54");
-    let price = localStorage.getItem("price54");
-    let img = localStorage.getItem("img54");
+function place54(nm, price, img) {
+    localStorage.setItem("code54", nm);
+    localStorage.setItem("price54", price);
+    localStorage.setItem("img54", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2393,7 +2171,7 @@ function place54() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2414,11 +2192,10 @@ function place54() {
     localStorage.setItem("thing54", shopItem);
 }
 
-
-function place55() {
-    let place = localStorage.getItem("code55");
-    let price = localStorage.getItem("price55");
-    let img = localStorage.getItem("img55");
+function place55(nm, price, img) {
+    localStorage.setItem("code55", nm);
+    localStorage.setItem("price55", price);
+    localStorage.setItem("img55", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2433,7 +2210,7 @@ function place55() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2454,11 +2231,10 @@ function place55() {
     localStorage.setItem("thing55", shopItem);
 }
 
-
-function place56() {
-    let place = localStorage.getItem("code56");
-    let price = localStorage.getItem("price56");
-    let img = localStorage.getItem("img56");
+function place56(nm, price, img) {
+    localStorage.setItem("code56", nm);
+    localStorage.setItem("price56", price);
+    localStorage.setItem("img56", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2473,7 +2249,7 @@ function place56() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2494,11 +2270,10 @@ function place56() {
     localStorage.setItem("thing56", shopItem);
 }
 
-
-function place57() {
-    let place = localStorage.getItem("code57");
-    let price = localStorage.getItem("price57");
-    let img = localStorage.getItem("img57");
+function place57(nm, price, img) {
+    localStorage.setItem("code57", nm);
+    localStorage.setItem("price57", price);
+    localStorage.setItem("img57", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2513,7 +2288,7 @@ function place57() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2534,11 +2309,10 @@ function place57() {
     localStorage.setItem("thing57", shopItem);
 }
 
-
-function place58() {
-    let place = localStorage.getItem("code58");
-    let price = localStorage.getItem("price58");
-    let img = localStorage.getItem("img58");
+function place58(nm, price, img) {
+    localStorage.setItem("code58", nm);
+    localStorage.setItem("price58", price);
+    localStorage.setItem("img58", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2553,7 +2327,7 @@ function place58() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2574,11 +2348,10 @@ function place58() {
     localStorage.setItem("thing58", shopItem);
 }
 
-
-function place59() {
-    let place = localStorage.getItem("code59");
-    let price = localStorage.getItem("price59");
-    let img = localStorage.getItem("img59");
+function place59(nm, price, img) {
+    localStorage.setItem("code59", nm);
+    localStorage.setItem("price59", price);
+    localStorage.setItem("img59", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2593,7 +2366,7 @@ function place59() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2614,11 +2387,10 @@ function place59() {
     localStorage.setItem("thing59", shopItem);
 }
 
-
-function place60() {
-    let place = localStorage.getItem("code60");
-    let price = localStorage.getItem("price60");
-    let img = localStorage.getItem("img60");
+function place60(nm, price, img) {
+    localStorage.setItem("code60", nm);
+    localStorage.setItem("price60", price);
+    localStorage.setItem("img60", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2633,7 +2405,7 @@ function place60() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2654,11 +2426,10 @@ function place60() {
     localStorage.setItem("thing60", shopItem);
 }
 
-
-function place61() {
-    let place = localStorage.getItem("code61");
-    let price = localStorage.getItem("price61");
-    let img = localStorage.getItem("img61");
+function place61(nm, price, img) {
+    localStorage.setItem("code61", nm);
+    localStorage.setItem("price61", price);
+    localStorage.setItem("img61", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2673,7 +2444,7 @@ function place61() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2694,11 +2465,10 @@ function place61() {
     localStorage.setItem("thing61", shopItem);
 }
 
-
-function place62() {
-    let place = localStorage.getItem("code62");
-    let price = localStorage.getItem("price62");
-    let img = localStorage.getItem("img62");
+function place62(nm, price, img) {
+    localStorage.setItem("code62", nm);
+    localStorage.setItem("price62", price);
+    localStorage.setItem("img62", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2713,7 +2483,7 @@ function place62() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2734,11 +2504,10 @@ function place62() {
     localStorage.setItem("thing62", shopItem);
 }
 
-
-function place63() {
-    let place = localStorage.getItem("code63");
-    let price = localStorage.getItem("price63");
-    let img = localStorage.getItem("img63");
+function place63(nm, price, img) {
+    localStorage.setItem("code63", nm);
+    localStorage.setItem("price63", price);
+    localStorage.setItem("img63", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2753,7 +2522,7 @@ function place63() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2774,11 +2543,10 @@ function place63() {
     localStorage.setItem("thing63", shopItem);
 }
 
-
-function place64() {
-    let place = localStorage.getItem("code64");
-    let price = localStorage.getItem("price64");
-    let img = localStorage.getItem("img64");
+function place64(nm, price, img) {
+    localStorage.setItem("code64", nm);
+    localStorage.setItem("price64", price);
+    localStorage.setItem("img64", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2793,7 +2561,7 @@ function place64() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2814,11 +2582,10 @@ function place64() {
     localStorage.setItem("thing64", shopItem);
 }
 
-
-function place65() {
-    let place = localStorage.getItem("code65");
-    let price = localStorage.getItem("price65");
-    let img = localStorage.getItem("img65");
+function place65(nm, price, img) {
+    localStorage.setItem("code65", nm);
+    localStorage.setItem("price65", price);
+    localStorage.setItem("img65", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2833,7 +2600,7 @@ function place65() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2854,11 +2621,10 @@ function place65() {
     localStorage.setItem("thing65", shopItem);
 }
 
-
-function place66() {
-    let place = localStorage.getItem("code66");
-    let price = localStorage.getItem("price66");
-    let img = localStorage.getItem("img66");
+function place66(nm, price, img) {
+    localStorage.setItem("code66", nm);
+    localStorage.setItem("price66", price);
+    localStorage.setItem("img66", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2873,7 +2639,7 @@ function place66() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2894,11 +2660,10 @@ function place66() {
     localStorage.setItem("thing66", shopItem);
 }
 
-
-function place67() {
-    let place = localStorage.getItem("code67");
-    let price = localStorage.getItem("price67");
-    let img = localStorage.getItem("img67");
+function place67(nm, price, img) {
+    localStorage.setItem("code67", nm);
+    localStorage.setItem("price67", price);
+    localStorage.setItem("img67", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2913,7 +2678,7 @@ function place67() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2934,11 +2699,10 @@ function place67() {
     localStorage.setItem("thing67", shopItem);
 }
 
-
-function place68() {
-    let place = localStorage.getItem("code68");
-    let price = localStorage.getItem("price68");
-    let img = localStorage.getItem("img68");
+function place68(nm, price, img) {
+    localStorage.setItem("code68", nm);
+    localStorage.setItem("price68", price);
+    localStorage.setItem("img68", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2953,7 +2717,7 @@ function place68() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -2974,11 +2738,10 @@ function place68() {
     localStorage.setItem("thing68", shopItem);
 }
 
-
-function place69() {
-    let place = localStorage.getItem("code69");
-    let price = localStorage.getItem("price69");
-    let img = localStorage.getItem("img69");
+function place69(nm, price, img) {
+    localStorage.setItem("code69", nm);
+    localStorage.setItem("price69", price);
+    localStorage.setItem("img69", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -2993,7 +2756,7 @@ function place69() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3014,11 +2777,10 @@ function place69() {
     localStorage.setItem("thing69", shopItem);
 }
 
-
-function place70() {
-    let place = localStorage.getItem("code70");
-    let price = localStorage.getItem("price70");
-    let img = localStorage.getItem("img70");
+function place70(nm, price, img) {
+    localStorage.setItem("code70", nm);
+    localStorage.setItem("price70", price);
+    localStorage.setItem("img70", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3033,7 +2795,7 @@ function place70() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3054,11 +2816,10 @@ function place70() {
     localStorage.setItem("thing70", shopItem);
 }
 
-
-function place71() {
-    let place = localStorage.getItem("code71");
-    let price = localStorage.getItem("price71");
-    let img = localStorage.getItem("img71");
+function place71(nm, price, img) {
+    localStorage.setItem("code71", nm);
+    localStorage.setItem("price71", price);
+    localStorage.setItem("img71", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3073,7 +2834,7 @@ function place71() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3094,11 +2855,10 @@ function place71() {
     localStorage.setItem("thing71", shopItem);
 }
 
-
-function place72() {
-    let place = localStorage.getItem("code72");
-    let price = localStorage.getItem("price72");
-    let img = localStorage.getItem("img72");
+function place72(nm, price, img) {
+    localStorage.setItem("code72", nm);
+    localStorage.setItem("price72", price);
+    localStorage.setItem("img72", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3113,7 +2873,7 @@ function place72() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3134,11 +2894,10 @@ function place72() {
     localStorage.setItem("thing72", shopItem);
 }
 
-
-function place73() {
-    let place = localStorage.getItem("code73");
-    let price = localStorage.getItem("price73");
-    let img = localStorage.getItem("img73");
+function place73(nm, price, img) {
+    localStorage.setItem("code73", nm);
+    localStorage.setItem("price73", price);
+    localStorage.setItem("img73", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3153,7 +2912,7 @@ function place73() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3174,11 +2933,10 @@ function place73() {
     localStorage.setItem("thing73", shopItem);
 }
 
-
-function place74() {
-    let place = localStorage.getItem("code74");
-    let price = localStorage.getItem("price74");
-    let img = localStorage.getItem("img74");
+function place74(nm, price, img) {
+    localStorage.setItem("code74", nm);
+    localStorage.setItem("price74", price);
+    localStorage.setItem("img74", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3193,7 +2951,7 @@ function place74() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3214,11 +2972,10 @@ function place74() {
     localStorage.setItem("thing74", shopItem);
 }
 
-
-function place75() {
-    let place = localStorage.getItem("code75");
-    let price = localStorage.getItem("price75");
-    let img = localStorage.getItem("img75");
+function place75(nm, price, img) {
+    localStorage.setItem("code75", nm);
+    localStorage.setItem("price75", price);
+    localStorage.setItem("img75", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3233,7 +2990,7 @@ function place75() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3254,11 +3011,10 @@ function place75() {
     localStorage.setItem("thing75", shopItem);
 }
 
-
-function place76() {
-    let place = localStorage.getItem("code76");
-    let price = localStorage.getItem("price76");
-    let img = localStorage.getItem("img76");
+function place76(nm, price, img) {
+    localStorage.setItem("code76", nm);
+    localStorage.setItem("price76", price);
+    localStorage.setItem("img76", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3273,7 +3029,7 @@ function place76() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3294,11 +3050,10 @@ function place76() {
     localStorage.setItem("thing76", shopItem);
 }
 
-
-function place77() {
-    let place = localStorage.getItem("code77");
-    let price = localStorage.getItem("price77");
-    let img = localStorage.getItem("img77");
+function place77(nm, price, img) {
+    localStorage.setItem("code77", nm);
+    localStorage.setItem("price77", price);
+    localStorage.setItem("img77", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3313,7 +3068,7 @@ function place77() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3334,11 +3089,10 @@ function place77() {
     localStorage.setItem("thing77", shopItem);
 }
 
-
-function place78() {
-    let place = localStorage.getItem("code78");
-    let price = localStorage.getItem("price78");
-    let img = localStorage.getItem("img78");
+function place78(nm, price, img) {
+    localStorage.setItem("code78", nm);
+    localStorage.setItem("price78", price);
+    localStorage.setItem("img78", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3353,7 +3107,7 @@ function place78() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3374,11 +3128,10 @@ function place78() {
     localStorage.setItem("thing78", shopItem);
 }
 
-
-function place79() {
-    let place = localStorage.getItem("code79");
-    let price = localStorage.getItem("price79");
-    let img = localStorage.getItem("img79");
+function place79(nm, price, img) {
+    localStorage.setItem("code79", nm);
+    localStorage.setItem("price79", price);
+    localStorage.setItem("img79", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3393,7 +3146,7 @@ function place79() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3414,11 +3167,10 @@ function place79() {
     localStorage.setItem("thing79", shopItem);
 }
 
-
-function place80() {
-    let place = localStorage.getItem("code80");
-    let price = localStorage.getItem("price80");
-    let img = localStorage.getItem("img80");
+function place80(nm, price, img) {
+    localStorage.setItem("code80", nm);
+    localStorage.setItem("price80", price);
+    localStorage.setItem("img80", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3433,7 +3185,7 @@ function place80() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3454,11 +3206,10 @@ function place80() {
     localStorage.setItem("thing80", shopItem);
 }
 
-
-function place81() {
-    let place = localStorage.getItem("code81");
-    let price = localStorage.getItem("price81");
-    let img = localStorage.getItem("img81");
+function place81(nm, price, img) {
+    localStorage.setItem("code81", nm);
+    localStorage.setItem("price81", price);
+    localStorage.setItem("img81", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3473,7 +3224,7 @@ function place81() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3494,11 +3245,10 @@ function place81() {
     localStorage.setItem("thing81", shopItem);
 }
 
-
-function place82() {
-    let place = localStorage.getItem("code82");
-    let price = localStorage.getItem("price82");
-    let img = localStorage.getItem("img82");
+function place82(nm, price, img) {
+    localStorage.setItem("code82", nm);
+    localStorage.setItem("price82", price);
+    localStorage.setItem("img82", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3513,7 +3263,7 @@ function place82() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3534,11 +3284,10 @@ function place82() {
     localStorage.setItem("thing82", shopItem);
 }
 
-
-function place83() {
-    let place = localStorage.getItem("code83");
-    let price = localStorage.getItem("price83");
-    let img = localStorage.getItem("img83");
+function place83(nm, price, img) {
+    localStorage.setItem("code83", nm);
+    localStorage.setItem("price83", price);
+    localStorage.setItem("img83", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3553,7 +3302,7 @@ function place83() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3574,11 +3323,10 @@ function place83() {
     localStorage.setItem("thing83", shopItem);
 }
 
-
-function place84() {
-    let place = localStorage.getItem("code84");
-    let price = localStorage.getItem("price84");
-    let img = localStorage.getItem("img84");
+function place84(nm, price, img) {
+    localStorage.setItem("code84", nm);
+    localStorage.setItem("price84", price);
+    localStorage.setItem("img84", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3593,7 +3341,7 @@ function place84() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3614,11 +3362,10 @@ function place84() {
     localStorage.setItem("thing84", shopItem);
 }
 
-
-function place85() {
-    let place = localStorage.getItem("code85");
-    let price = localStorage.getItem("price85");
-    let img = localStorage.getItem("img85");
+function place85(nm, price, img) {
+    localStorage.setItem("code85", nm);
+    localStorage.setItem("price85", price);
+    localStorage.setItem("img85", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3633,7 +3380,7 @@ function place85() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3654,11 +3401,10 @@ function place85() {
     localStorage.setItem("thing85", shopItem);
 }
 
-
-function place86() {
-    let place = localStorage.getItem("code86");
-    let price = localStorage.getItem("price86");
-    let img = localStorage.getItem("img86");
+function place86(nm, price, img) {
+    localStorage.setItem("code86", nm);
+    localStorage.setItem("price86", price);
+    localStorage.setItem("img86", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3673,7 +3419,7 @@ function place86() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3694,11 +3440,10 @@ function place86() {
     localStorage.setItem("thing86", shopItem);
 }
 
-
-function place87() {
-    let place = localStorage.getItem("code87");
-    let price = localStorage.getItem("price87");
-    let img = localStorage.getItem("img87");
+function place87(nm, price, img) {
+    localStorage.setItem("code87", nm);
+    localStorage.setItem("price87", price);
+    localStorage.setItem("img87", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3713,7 +3458,7 @@ function place87() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3734,11 +3479,10 @@ function place87() {
     localStorage.setItem("thing87", shopItem);
 }
 
-
-function place88() {
-    let place = localStorage.getItem("code88");
-    let price = localStorage.getItem("price88");
-    let img = localStorage.getItem("img88");
+function place88(nm, price, img) {
+    localStorage.setItem("code88", nm);
+    localStorage.setItem("price88", price);
+    localStorage.setItem("img88", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3753,7 +3497,7 @@ function place88() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3774,11 +3518,10 @@ function place88() {
     localStorage.setItem("thing88", shopItem);
 }
 
-
-function place89() {
-    let place = localStorage.getItem("code89");
-    let price = localStorage.getItem("price89");
-    let img = localStorage.getItem("img89");
+function place89(nm, price, img) {
+    localStorage.setItem("code89", nm);
+    localStorage.setItem("price89", price);
+    localStorage.setItem("img89", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3793,7 +3536,7 @@ function place89() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3814,11 +3557,10 @@ function place89() {
     localStorage.setItem("thing89", shopItem);
 }
 
-
-function place90() {
-    let place = localStorage.getItem("code90");
-    let price = localStorage.getItem("price90");
-    let img = localStorage.getItem("img90");
+function place90(nm, price, img) {
+    localStorage.setItem("code90", nm);
+    localStorage.setItem("price90", price);
+    localStorage.setItem("img90", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3833,7 +3575,7 @@ function place90() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3854,11 +3596,10 @@ function place90() {
     localStorage.setItem("thing90", shopItem);
 }
 
-
-function place91() {
-    let place = localStorage.getItem("code91");
-    let price = localStorage.getItem("price91");
-    let img = localStorage.getItem("img91");
+function place91(nm, price, img) {
+    localStorage.setItem("code91", nm);
+    localStorage.setItem("price91", price);
+    localStorage.setItem("img91", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3873,7 +3614,7 @@ function place91() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3894,11 +3635,10 @@ function place91() {
     localStorage.setItem("thing91", shopItem);
 }
 
-
-function place92() {
-    let place = localStorage.getItem("code92");
-    let price = localStorage.getItem("price92");
-    let img = localStorage.getItem("img92");
+function place92(nm, price, img) {
+    localStorage.setItem("code92", nm);
+    localStorage.setItem("price92", price);
+    localStorage.setItem("img92", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3913,7 +3653,7 @@ function place92() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3934,11 +3674,10 @@ function place92() {
     localStorage.setItem("thing92", shopItem);
 }
 
-
-function place93() {
-    let place = localStorage.getItem("code93");
-    let price = localStorage.getItem("price93");
-    let img = localStorage.getItem("img93");
+function place93(nm, price, img) {
+    localStorage.setItem("code93", nm);
+    localStorage.setItem("price93", price);
+    localStorage.setItem("img93", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3953,7 +3692,7 @@ function place93() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -3974,11 +3713,10 @@ function place93() {
     localStorage.setItem("thing93", shopItem);
 }
 
-
-function place94() {
-    let place = localStorage.getItem("code94");
-    let price = localStorage.getItem("price94");
-    let img = localStorage.getItem("img94");
+function place94(nm, price, img) {
+    localStorage.setItem("code94", nm);
+    localStorage.setItem("price94", price);
+    localStorage.setItem("img94", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -3993,7 +3731,7 @@ function place94() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4014,11 +3752,10 @@ function place94() {
     localStorage.setItem("thing94", shopItem);
 }
 
-
-function place95() {
-    let place = localStorage.getItem("code95");
-    let price = localStorage.getItem("price95");
-    let img = localStorage.getItem("img95");
+function place95(nm, price, img) {
+    localStorage.setItem("code95", nm);
+    localStorage.setItem("price95", price);
+    localStorage.setItem("img95", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -4033,7 +3770,7 @@ function place95() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4054,11 +3791,10 @@ function place95() {
     localStorage.setItem("thing95", shopItem);
 }
 
-
-function place96() {
-    let place = localStorage.getItem("code96");
-    let price = localStorage.getItem("price96");
-    let img = localStorage.getItem("img96");
+function place96(nm, price, img) {
+    localStorage.setItem("code96", nm);
+    localStorage.setItem("price96", price);
+    localStorage.setItem("img96", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -4073,7 +3809,7 @@ function place96() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4094,11 +3830,10 @@ function place96() {
     localStorage.setItem("thing96", shopItem);
 }
 
-
-function place97() {
-    let place = localStorage.getItem("code97");
-    let price = localStorage.getItem("price97");
-    let img = localStorage.getItem("img97");
+function place97(nm, price, img) {
+    localStorage.setItem("code97", nm);
+    localStorage.setItem("price97", price);
+    localStorage.setItem("img97", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -4113,7 +3848,7 @@ function place97() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4134,11 +3869,10 @@ function place97() {
     localStorage.setItem("thing97", shopItem);
 }
 
-
-function place98() {
-    let place = localStorage.getItem("code98");
-    let price = localStorage.getItem("price98");
-    let img = localStorage.getItem("img98");
+function place98(nm, price, img) {
+    localStorage.setItem("code98", nm);
+    localStorage.setItem("price98", price);
+    localStorage.setItem("img98", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -4153,7 +3887,7 @@ function place98() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4174,11 +3908,10 @@ function place98() {
     localStorage.setItem("thing98", shopItem);
 }
 
-
-function place99() {
-    let place = localStorage.getItem("code99");
-    let price = localStorage.getItem("price99");
-    let img = localStorage.getItem("img99");
+function place99(nm, price, img) {
+    localStorage.setItem("code99", nm);
+    localStorage.setItem("price99", price);
+    localStorage.setItem("img99", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -4193,7 +3926,7 @@ function place99() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4214,11 +3947,10 @@ function place99() {
     localStorage.setItem("thing99", shopItem);
 }
 
-
-function place100() {
-    let place = localStorage.getItem("code100");
-    let price = localStorage.getItem("price100");
-    let img = localStorage.getItem("img100");
+function place100(nm, price, img) {
+    localStorage.setItem("code100", nm);
+    localStorage.setItem("price100", price);
+    localStorage.setItem("img100", img);
 
     const itemsArray = [];
     itemsArray.push(place);
@@ -4233,7 +3965,7 @@ function place100() {
                             <div class="card text-bg-secondary mb-3" style="width: 18rem;">
                                 <img src="${img}" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">${place}  $${price}</h5>
+                                    <h5 class="card-title">${nm}  $${price}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
@@ -4253,6 +3985,7 @@ function place100() {
     const shopItem = cartHTML;
     localStorage.setItem("thing100", shopItem);
 }
+
 
 
       function Ok() {
