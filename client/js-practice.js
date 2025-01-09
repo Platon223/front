@@ -242,7 +242,85 @@ function submit() {
         document.querySelector(".uptadation").innerHTML = uptades;
       }
 
-test_test.js:2 
+for (let i = 1; i <= 100; i++) {
+    console.log(`
+function place${i}(nm, price, img) {
+    localStorage.setItem("code${i}");
+    localStorage.setItem("price${i}");
+    localStorage.setItem("img${i}");
+
+    const itemsArray = [];
+    itemsArray.push(nm);
+
+    console.log(itemsArray);
+
+    let cartHTML = "";
+
+    for (let j = 0; j < itemsArray.length; j++) {
+        let html = \`<div class="stuff${i}">
+                        <div class="col-lg">
+                            <div class="card text-bg-secondary mb-3" style="width: 18rem;">
+                                <img src="\${img}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">\${nm}  $\${price}</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <button class="btn btn-success" onclick="addproduct${i}PriseAndQuanity();"> + </button>
+                                    <li class="count${i}" style="font-size: 25px;"></li>
+                                    <button class="btn btn-danger" onclick="decproduct${i}PriseAndQuanity();"> - </button>
+                                </ul>
+                                <div class="card-body">
+                                    <button onclick="removeProduct${i}();">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>\`;
+        cartHTML += html;
+    }
+
+    const shopItem = cartHTML;
+    localStorage.setItem("thing${i}", shopItem);
+}
+`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function place1(nm, price, img) {
     localStorage.setItem("code1");
     localStorage.setItem("price1");
@@ -282,7 +360,7 @@ function place1(nm, price, img) {
     localStorage.setItem("thing1", shopItem);
 }
 
-test_test.js:2 
+
 function place2(nm, price, img) {
     localStorage.setItem("code2");
     localStorage.setItem("price2");
@@ -322,7 +400,7 @@ function place2(nm, price, img) {
     localStorage.setItem("thing2", shopItem);
 }
 
-test_test.js:2 
+
 function place3(nm, price, img) {
     localStorage.setItem("code3");
     localStorage.setItem("price3");
@@ -362,7 +440,7 @@ function place3(nm, price, img) {
     localStorage.setItem("thing3", shopItem);
 }
 
-test_test.js:2 
+
 function place4(nm, price, img) {
     localStorage.setItem("code4");
     localStorage.setItem("price4");
@@ -402,7 +480,7 @@ function place4(nm, price, img) {
     localStorage.setItem("thing4", shopItem);
 }
 
-test_test.js:2 
+
 function place5(nm, price, img) {
     localStorage.setItem("code5");
     localStorage.setItem("price5");
@@ -442,7 +520,7 @@ function place5(nm, price, img) {
     localStorage.setItem("thing5", shopItem);
 }
 
-test_test.js:2 
+
 function place6(nm, price, img) {
     localStorage.setItem("code6");
     localStorage.setItem("price6");
@@ -482,7 +560,7 @@ function place6(nm, price, img) {
     localStorage.setItem("thing6", shopItem);
 }
 
-test_test.js:2 
+
 function place7(nm, price, img) {
     localStorage.setItem("code7");
     localStorage.setItem("price7");
@@ -522,7 +600,7 @@ function place7(nm, price, img) {
     localStorage.setItem("thing7", shopItem);
 }
 
-test_test.js:2 
+
 function place8(nm, price, img) {
     localStorage.setItem("code8");
     localStorage.setItem("price8");
@@ -562,7 +640,7 @@ function place8(nm, price, img) {
     localStorage.setItem("thing8", shopItem);
 }
 
-test_test.js:2 
+
 function place9(nm, price, img) {
     localStorage.setItem("code9");
     localStorage.setItem("price9");
@@ -602,7 +680,7 @@ function place9(nm, price, img) {
     localStorage.setItem("thing9", shopItem);
 }
 
-test_test.js:2 
+
 function place10(nm, price, img) {
     localStorage.setItem("code10");
     localStorage.setItem("price10");
@@ -642,7 +720,7 @@ function place10(nm, price, img) {
     localStorage.setItem("thing10", shopItem);
 }
 
-test_test.js:2 
+
 function place11(nm, price, img) {
     localStorage.setItem("code11");
     localStorage.setItem("price11");
@@ -682,7 +760,7 @@ function place11(nm, price, img) {
     localStorage.setItem("thing11", shopItem);
 }
 
-test_test.js:2 
+
 function place12(nm, price, img) {
     localStorage.setItem("code12");
     localStorage.setItem("price12");
@@ -722,7 +800,7 @@ function place12(nm, price, img) {
     localStorage.setItem("thing12", shopItem);
 }
 
-test_test.js:2 
+
 function place13(nm, price, img) {
     localStorage.setItem("code13");
     localStorage.setItem("price13");
@@ -762,7 +840,7 @@ function place13(nm, price, img) {
     localStorage.setItem("thing13", shopItem);
 }
 
-test_test.js:2 
+
 function place14(nm, price, img) {
     localStorage.setItem("code14");
     localStorage.setItem("price14");
@@ -802,7 +880,7 @@ function place14(nm, price, img) {
     localStorage.setItem("thing14", shopItem);
 }
 
-test_test.js:2 
+
 function place15(nm, price, img) {
     localStorage.setItem("code15");
     localStorage.setItem("price15");
@@ -842,7 +920,7 @@ function place15(nm, price, img) {
     localStorage.setItem("thing15", shopItem);
 }
 
-test_test.js:2 
+
 function place16(nm, price, img) {
     localStorage.setItem("code16");
     localStorage.setItem("price16");
@@ -882,7 +960,7 @@ function place16(nm, price, img) {
     localStorage.setItem("thing16", shopItem);
 }
 
-test_test.js:2 
+
 function place17(nm, price, img) {
     localStorage.setItem("code17");
     localStorage.setItem("price17");
@@ -922,7 +1000,7 @@ function place17(nm, price, img) {
     localStorage.setItem("thing17", shopItem);
 }
 
-test_test.js:2 
+
 function place18(nm, price, img) {
     localStorage.setItem("code18");
     localStorage.setItem("price18");
@@ -962,7 +1040,7 @@ function place18(nm, price, img) {
     localStorage.setItem("thing18", shopItem);
 }
 
-test_test.js:2 
+
 function place19(nm, price, img) {
     localStorage.setItem("code19");
     localStorage.setItem("price19");
@@ -1002,7 +1080,7 @@ function place19(nm, price, img) {
     localStorage.setItem("thing19", shopItem);
 }
 
-test_test.js:2 
+
 function place20(nm, price, img) {
     localStorage.setItem("code20");
     localStorage.setItem("price20");
@@ -1042,7 +1120,7 @@ function place20(nm, price, img) {
     localStorage.setItem("thing20", shopItem);
 }
 
-test_test.js:2 
+
 function place21(nm, price, img) {
     localStorage.setItem("code21");
     localStorage.setItem("price21");
@@ -1082,7 +1160,7 @@ function place21(nm, price, img) {
     localStorage.setItem("thing21", shopItem);
 }
 
-test_test.js:2 
+
 function place22(nm, price, img) {
     localStorage.setItem("code22");
     localStorage.setItem("price22");
@@ -1122,7 +1200,7 @@ function place22(nm, price, img) {
     localStorage.setItem("thing22", shopItem);
 }
 
-test_test.js:2 
+
 function place23(nm, price, img) {
     localStorage.setItem("code23");
     localStorage.setItem("price23");
@@ -1162,7 +1240,7 @@ function place23(nm, price, img) {
     localStorage.setItem("thing23", shopItem);
 }
 
-test_test.js:2 
+
 function place24(nm, price, img) {
     localStorage.setItem("code24");
     localStorage.setItem("price24");
@@ -1202,7 +1280,7 @@ function place24(nm, price, img) {
     localStorage.setItem("thing24", shopItem);
 }
 
-test_test.js:2 
+
 function place25(nm, price, img) {
     localStorage.setItem("code25");
     localStorage.setItem("price25");
@@ -1242,7 +1320,7 @@ function place25(nm, price, img) {
     localStorage.setItem("thing25", shopItem);
 }
 
-test_test.js:2 
+
 function place26(nm, price, img) {
     localStorage.setItem("code26");
     localStorage.setItem("price26");
@@ -1282,7 +1360,7 @@ function place26(nm, price, img) {
     localStorage.setItem("thing26", shopItem);
 }
 
-test_test.js:2 
+
 function place27(nm, price, img) {
     localStorage.setItem("code27");
     localStorage.setItem("price27");
@@ -1322,7 +1400,7 @@ function place27(nm, price, img) {
     localStorage.setItem("thing27", shopItem);
 }
 
-test_test.js:2 
+
 function place28(nm, price, img) {
     localStorage.setItem("code28");
     localStorage.setItem("price28");
@@ -1362,7 +1440,7 @@ function place28(nm, price, img) {
     localStorage.setItem("thing28", shopItem);
 }
 
-test_test.js:2 
+
 function place29(nm, price, img) {
     localStorage.setItem("code29");
     localStorage.setItem("price29");
@@ -1402,7 +1480,7 @@ function place29(nm, price, img) {
     localStorage.setItem("thing29", shopItem);
 }
 
-test_test.js:2 
+
 function place30(nm, price, img) {
     localStorage.setItem("code30");
     localStorage.setItem("price30");
@@ -1442,7 +1520,7 @@ function place30(nm, price, img) {
     localStorage.setItem("thing30", shopItem);
 }
 
-test_test.js:2 
+
 function place31(nm, price, img) {
     localStorage.setItem("code31");
     localStorage.setItem("price31");
@@ -1482,7 +1560,7 @@ function place31(nm, price, img) {
     localStorage.setItem("thing31", shopItem);
 }
 
-test_test.js:2 
+
 function place32(nm, price, img) {
     localStorage.setItem("code32");
     localStorage.setItem("price32");
@@ -1522,7 +1600,7 @@ function place32(nm, price, img) {
     localStorage.setItem("thing32", shopItem);
 }
 
-test_test.js:2 
+
 function place33(nm, price, img) {
     localStorage.setItem("code33");
     localStorage.setItem("price33");
@@ -1562,7 +1640,7 @@ function place33(nm, price, img) {
     localStorage.setItem("thing33", shopItem);
 }
 
-test_test.js:2 
+
 function place34(nm, price, img) {
     localStorage.setItem("code34");
     localStorage.setItem("price34");
@@ -1602,7 +1680,7 @@ function place34(nm, price, img) {
     localStorage.setItem("thing34", shopItem);
 }
 
-test_test.js:2 
+
 function place35(nm, price, img) {
     localStorage.setItem("code35");
     localStorage.setItem("price35");
@@ -1642,7 +1720,7 @@ function place35(nm, price, img) {
     localStorage.setItem("thing35", shopItem);
 }
 
-test_test.js:2 
+
 function place36(nm, price, img) {
     localStorage.setItem("code36");
     localStorage.setItem("price36");
@@ -1682,7 +1760,7 @@ function place36(nm, price, img) {
     localStorage.setItem("thing36", shopItem);
 }
 
-test_test.js:2 
+
 function place37(nm, price, img) {
     localStorage.setItem("code37");
     localStorage.setItem("price37");
@@ -1722,7 +1800,7 @@ function place37(nm, price, img) {
     localStorage.setItem("thing37", shopItem);
 }
 
-test_test.js:2 
+
 function place38(nm, price, img) {
     localStorage.setItem("code38");
     localStorage.setItem("price38");
@@ -1762,7 +1840,7 @@ function place38(nm, price, img) {
     localStorage.setItem("thing38", shopItem);
 }
 
-test_test.js:2 
+
 function place39(nm, price, img) {
     localStorage.setItem("code39");
     localStorage.setItem("price39");
@@ -1802,7 +1880,7 @@ function place39(nm, price, img) {
     localStorage.setItem("thing39", shopItem);
 }
 
-test_test.js:2 
+
 function place40(nm, price, img) {
     localStorage.setItem("code40");
     localStorage.setItem("price40");
@@ -1842,7 +1920,7 @@ function place40(nm, price, img) {
     localStorage.setItem("thing40", shopItem);
 }
 
-test_test.js:2 
+
 function place41(nm, price, img) {
     localStorage.setItem("code41");
     localStorage.setItem("price41");
@@ -1882,7 +1960,7 @@ function place41(nm, price, img) {
     localStorage.setItem("thing41", shopItem);
 }
 
-test_test.js:2 
+
 function place42(nm, price, img) {
     localStorage.setItem("code42");
     localStorage.setItem("price42");
@@ -1922,7 +2000,7 @@ function place42(nm, price, img) {
     localStorage.setItem("thing42", shopItem);
 }
 
-test_test.js:2 
+
 function place43(nm, price, img) {
     localStorage.setItem("code43");
     localStorage.setItem("price43");
@@ -1962,7 +2040,7 @@ function place43(nm, price, img) {
     localStorage.setItem("thing43", shopItem);
 }
 
-test_test.js:2 
+
 function place44(nm, price, img) {
     localStorage.setItem("code44");
     localStorage.setItem("price44");
@@ -2002,7 +2080,7 @@ function place44(nm, price, img) {
     localStorage.setItem("thing44", shopItem);
 }
 
-test_test.js:2 
+
 function place45(nm, price, img) {
     localStorage.setItem("code45");
     localStorage.setItem("price45");
@@ -2042,7 +2120,7 @@ function place45(nm, price, img) {
     localStorage.setItem("thing45", shopItem);
 }
 
-test_test.js:2 
+
 function place46(nm, price, img) {
     localStorage.setItem("code46");
     localStorage.setItem("price46");
@@ -2082,7 +2160,7 @@ function place46(nm, price, img) {
     localStorage.setItem("thing46", shopItem);
 }
 
-test_test.js:2 
+
 function place47(nm, price, img) {
     localStorage.setItem("code47");
     localStorage.setItem("price47");
@@ -2122,7 +2200,7 @@ function place47(nm, price, img) {
     localStorage.setItem("thing47", shopItem);
 }
 
-test_test.js:2 
+
 function place48(nm, price, img) {
     localStorage.setItem("code48");
     localStorage.setItem("price48");
@@ -2162,7 +2240,7 @@ function place48(nm, price, img) {
     localStorage.setItem("thing48", shopItem);
 }
 
-test_test.js:2 
+
 function place49(nm, price, img) {
     localStorage.setItem("code49");
     localStorage.setItem("price49");
@@ -2202,7 +2280,7 @@ function place49(nm, price, img) {
     localStorage.setItem("thing49", shopItem);
 }
 
-test_test.js:2 
+
 function place50(nm, price, img) {
     localStorage.setItem("code50");
     localStorage.setItem("price50");
@@ -2242,7 +2320,7 @@ function place50(nm, price, img) {
     localStorage.setItem("thing50", shopItem);
 }
 
-test_test.js:2 
+
 function place51(nm, price, img) {
     localStorage.setItem("code51");
     localStorage.setItem("price51");
@@ -2282,7 +2360,7 @@ function place51(nm, price, img) {
     localStorage.setItem("thing51", shopItem);
 }
 
-test_test.js:2 
+
 function place52(nm, price, img) {
     localStorage.setItem("code52");
     localStorage.setItem("price52");
@@ -2322,7 +2400,7 @@ function place52(nm, price, img) {
     localStorage.setItem("thing52", shopItem);
 }
 
-test_test.js:2 
+
 function place53(nm, price, img) {
     localStorage.setItem("code53");
     localStorage.setItem("price53");
@@ -2362,7 +2440,7 @@ function place53(nm, price, img) {
     localStorage.setItem("thing53", shopItem);
 }
 
-test_test.js:2 
+
 function place54(nm, price, img) {
     localStorage.setItem("code54");
     localStorage.setItem("price54");
@@ -2402,7 +2480,7 @@ function place54(nm, price, img) {
     localStorage.setItem("thing54", shopItem);
 }
 
-test_test.js:2 
+
 function place55(nm, price, img) {
     localStorage.setItem("code55");
     localStorage.setItem("price55");
@@ -2442,7 +2520,7 @@ function place55(nm, price, img) {
     localStorage.setItem("thing55", shopItem);
 }
 
-test_test.js:2 
+
 function place56(nm, price, img) {
     localStorage.setItem("code56");
     localStorage.setItem("price56");
@@ -2482,7 +2560,7 @@ function place56(nm, price, img) {
     localStorage.setItem("thing56", shopItem);
 }
 
-test_test.js:2 
+
 function place57(nm, price, img) {
     localStorage.setItem("code57");
     localStorage.setItem("price57");
@@ -2522,7 +2600,7 @@ function place57(nm, price, img) {
     localStorage.setItem("thing57", shopItem);
 }
 
-test_test.js:2 
+
 function place58(nm, price, img) {
     localStorage.setItem("code58");
     localStorage.setItem("price58");
@@ -2562,7 +2640,7 @@ function place58(nm, price, img) {
     localStorage.setItem("thing58", shopItem);
 }
 
-test_test.js:2 
+
 function place59(nm, price, img) {
     localStorage.setItem("code59");
     localStorage.setItem("price59");
@@ -2602,7 +2680,7 @@ function place59(nm, price, img) {
     localStorage.setItem("thing59", shopItem);
 }
 
-test_test.js:2 
+
 function place60(nm, price, img) {
     localStorage.setItem("code60");
     localStorage.setItem("price60");
@@ -2642,7 +2720,7 @@ function place60(nm, price, img) {
     localStorage.setItem("thing60", shopItem);
 }
 
-test_test.js:2 
+
 function place61(nm, price, img) {
     localStorage.setItem("code61");
     localStorage.setItem("price61");
@@ -2682,7 +2760,7 @@ function place61(nm, price, img) {
     localStorage.setItem("thing61", shopItem);
 }
 
-test_test.js:2 
+
 function place62(nm, price, img) {
     localStorage.setItem("code62");
     localStorage.setItem("price62");
@@ -2722,7 +2800,7 @@ function place62(nm, price, img) {
     localStorage.setItem("thing62", shopItem);
 }
 
-test_test.js:2 
+
 function place63(nm, price, img) {
     localStorage.setItem("code63");
     localStorage.setItem("price63");
@@ -2762,7 +2840,7 @@ function place63(nm, price, img) {
     localStorage.setItem("thing63", shopItem);
 }
 
-test_test.js:2 
+
 function place64(nm, price, img) {
     localStorage.setItem("code64");
     localStorage.setItem("price64");
@@ -2802,7 +2880,7 @@ function place64(nm, price, img) {
     localStorage.setItem("thing64", shopItem);
 }
 
-test_test.js:2 
+
 function place65(nm, price, img) {
     localStorage.setItem("code65");
     localStorage.setItem("price65");
@@ -2842,7 +2920,7 @@ function place65(nm, price, img) {
     localStorage.setItem("thing65", shopItem);
 }
 
-test_test.js:2 
+
 function place66(nm, price, img) {
     localStorage.setItem("code66");
     localStorage.setItem("price66");
@@ -2882,7 +2960,7 @@ function place66(nm, price, img) {
     localStorage.setItem("thing66", shopItem);
 }
 
-test_test.js:2 
+
 function place67(nm, price, img) {
     localStorage.setItem("code67");
     localStorage.setItem("price67");
@@ -2922,7 +3000,7 @@ function place67(nm, price, img) {
     localStorage.setItem("thing67", shopItem);
 }
 
-test_test.js:2 
+
 function place68(nm, price, img) {
     localStorage.setItem("code68");
     localStorage.setItem("price68");
@@ -2962,7 +3040,7 @@ function place68(nm, price, img) {
     localStorage.setItem("thing68", shopItem);
 }
 
-test_test.js:2 
+
 function place69(nm, price, img) {
     localStorage.setItem("code69");
     localStorage.setItem("price69");
@@ -3002,7 +3080,7 @@ function place69(nm, price, img) {
     localStorage.setItem("thing69", shopItem);
 }
 
-test_test.js:2 
+
 function place70(nm, price, img) {
     localStorage.setItem("code70");
     localStorage.setItem("price70");
@@ -3042,7 +3120,7 @@ function place70(nm, price, img) {
     localStorage.setItem("thing70", shopItem);
 }
 
-test_test.js:2 
+
 function place71(nm, price, img) {
     localStorage.setItem("code71");
     localStorage.setItem("price71");
@@ -3082,7 +3160,7 @@ function place71(nm, price, img) {
     localStorage.setItem("thing71", shopItem);
 }
 
-test_test.js:2 
+
 function place72(nm, price, img) {
     localStorage.setItem("code72");
     localStorage.setItem("price72");
@@ -3122,7 +3200,7 @@ function place72(nm, price, img) {
     localStorage.setItem("thing72", shopItem);
 }
 
-test_test.js:2 
+
 function place73(nm, price, img) {
     localStorage.setItem("code73");
     localStorage.setItem("price73");
@@ -3162,7 +3240,7 @@ function place73(nm, price, img) {
     localStorage.setItem("thing73", shopItem);
 }
 
-test_test.js:2 
+
 function place74(nm, price, img) {
     localStorage.setItem("code74");
     localStorage.setItem("price74");
@@ -3202,7 +3280,7 @@ function place74(nm, price, img) {
     localStorage.setItem("thing74", shopItem);
 }
 
-test_test.js:2 
+
 function place75(nm, price, img) {
     localStorage.setItem("code75");
     localStorage.setItem("price75");
@@ -3242,7 +3320,7 @@ function place75(nm, price, img) {
     localStorage.setItem("thing75", shopItem);
 }
 
-test_test.js:2 
+
 function place76(nm, price, img) {
     localStorage.setItem("code76");
     localStorage.setItem("price76");
@@ -3282,7 +3360,7 @@ function place76(nm, price, img) {
     localStorage.setItem("thing76", shopItem);
 }
 
-test_test.js:2 
+
 function place77(nm, price, img) {
     localStorage.setItem("code77");
     localStorage.setItem("price77");
@@ -3322,7 +3400,7 @@ function place77(nm, price, img) {
     localStorage.setItem("thing77", shopItem);
 }
 
-test_test.js:2 
+
 function place78(nm, price, img) {
     localStorage.setItem("code78");
     localStorage.setItem("price78");
@@ -3362,7 +3440,7 @@ function place78(nm, price, img) {
     localStorage.setItem("thing78", shopItem);
 }
 
-test_test.js:2 
+
 function place79(nm, price, img) {
     localStorage.setItem("code79");
     localStorage.setItem("price79");
@@ -3402,7 +3480,7 @@ function place79(nm, price, img) {
     localStorage.setItem("thing79", shopItem);
 }
 
-test_test.js:2 
+
 function place80(nm, price, img) {
     localStorage.setItem("code80");
     localStorage.setItem("price80");
@@ -3442,7 +3520,7 @@ function place80(nm, price, img) {
     localStorage.setItem("thing80", shopItem);
 }
 
-test_test.js:2 
+
 function place81(nm, price, img) {
     localStorage.setItem("code81");
     localStorage.setItem("price81");
@@ -3482,7 +3560,7 @@ function place81(nm, price, img) {
     localStorage.setItem("thing81", shopItem);
 }
 
-test_test.js:2 
+
 function place82(nm, price, img) {
     localStorage.setItem("code82");
     localStorage.setItem("price82");
@@ -3522,7 +3600,7 @@ function place82(nm, price, img) {
     localStorage.setItem("thing82", shopItem);
 }
 
-test_test.js:2 
+
 function place83(nm, price, img) {
     localStorage.setItem("code83");
     localStorage.setItem("price83");
@@ -3562,7 +3640,7 @@ function place83(nm, price, img) {
     localStorage.setItem("thing83", shopItem);
 }
 
-test_test.js:2 
+
 function place84(nm, price, img) {
     localStorage.setItem("code84");
     localStorage.setItem("price84");
@@ -3602,7 +3680,7 @@ function place84(nm, price, img) {
     localStorage.setItem("thing84", shopItem);
 }
 
-test_test.js:2 
+
 function place85(nm, price, img) {
     localStorage.setItem("code85");
     localStorage.setItem("price85");
@@ -3642,7 +3720,7 @@ function place85(nm, price, img) {
     localStorage.setItem("thing85", shopItem);
 }
 
-test_test.js:2 
+
 function place86(nm, price, img) {
     localStorage.setItem("code86");
     localStorage.setItem("price86");
@@ -3682,7 +3760,7 @@ function place86(nm, price, img) {
     localStorage.setItem("thing86", shopItem);
 }
 
-test_test.js:2 
+
 function place87(nm, price, img) {
     localStorage.setItem("code87");
     localStorage.setItem("price87");
@@ -3722,7 +3800,7 @@ function place87(nm, price, img) {
     localStorage.setItem("thing87", shopItem);
 }
 
-test_test.js:2 
+
 function place88(nm, price, img) {
     localStorage.setItem("code88");
     localStorage.setItem("price88");
@@ -3762,7 +3840,7 @@ function place88(nm, price, img) {
     localStorage.setItem("thing88", shopItem);
 }
 
-test_test.js:2 
+
 function place89(nm, price, img) {
     localStorage.setItem("code89");
     localStorage.setItem("price89");
@@ -3802,7 +3880,7 @@ function place89(nm, price, img) {
     localStorage.setItem("thing89", shopItem);
 }
 
-test_test.js:2 
+
 function place90(nm, price, img) {
     localStorage.setItem("code90");
     localStorage.setItem("price90");
@@ -3842,7 +3920,7 @@ function place90(nm, price, img) {
     localStorage.setItem("thing90", shopItem);
 }
 
-test_test.js:2 
+
 function place91(nm, price, img) {
     localStorage.setItem("code91");
     localStorage.setItem("price91");
@@ -3882,7 +3960,7 @@ function place91(nm, price, img) {
     localStorage.setItem("thing91", shopItem);
 }
 
-test_test.js:2 
+
 function place92(nm, price, img) {
     localStorage.setItem("code92");
     localStorage.setItem("price92");
@@ -3922,7 +4000,7 @@ function place92(nm, price, img) {
     localStorage.setItem("thing92", shopItem);
 }
 
-test_test.js:2 
+
 function place93(nm, price, img) {
     localStorage.setItem("code93");
     localStorage.setItem("price93");
@@ -3962,7 +4040,7 @@ function place93(nm, price, img) {
     localStorage.setItem("thing93", shopItem);
 }
 
-test_test.js:2 
+
 function place94(nm, price, img) {
     localStorage.setItem("code94");
     localStorage.setItem("price94");
@@ -4002,7 +4080,7 @@ function place94(nm, price, img) {
     localStorage.setItem("thing94", shopItem);
 }
 
-test_test.js:2 
+
 function place95(nm, price, img) {
     localStorage.setItem("code95");
     localStorage.setItem("price95");
@@ -4042,7 +4120,7 @@ function place95(nm, price, img) {
     localStorage.setItem("thing95", shopItem);
 }
 
-test_test.js:2 
+
 function place96(nm, price, img) {
     localStorage.setItem("code96");
     localStorage.setItem("price96");
@@ -4082,7 +4160,7 @@ function place96(nm, price, img) {
     localStorage.setItem("thing96", shopItem);
 }
 
-test_test.js:2 
+
 function place97(nm, price, img) {
     localStorage.setItem("code97");
     localStorage.setItem("price97");
@@ -4122,7 +4200,7 @@ function place97(nm, price, img) {
     localStorage.setItem("thing97", shopItem);
 }
 
-test_test.js:2 
+
 function place98(nm, price, img) {
     localStorage.setItem("code98");
     localStorage.setItem("price98");
@@ -4162,7 +4240,7 @@ function place98(nm, price, img) {
     localStorage.setItem("thing98", shopItem);
 }
 
-test_test.js:2 
+
 function place99(nm, price, img) {
     localStorage.setItem("code99");
     localStorage.setItem("price99");
@@ -4202,7 +4280,7 @@ function place99(nm, price, img) {
     localStorage.setItem("thing99", shopItem);
 }
 
-test_test.js:2 
+
 function place100(nm, price, img) {
     localStorage.setItem("code100");
     localStorage.setItem("price100");
@@ -4244,537 +4322,6 @@ function place100(nm, price, img) {
 
 
 
-
-      function Ok() {
-        document.querySelector(".helper").innerHTML = "";
-      }
-
-
-
-
-
-// STORE SIDE
-
-const loadingElem = document.querySelector('.spinner-wrapper');
-
-window.addEventListener('load', () => {
-    loadingElem.style.opacity = '0';
-
-    setTimeout(function(){
-        loadingElem.style.display = 'none';
-    }, 200)
-})
-
-localStorage.getItem('product');
-
-document.querySelector('.row').innerHTML = localStorage.getItem('uptadation');
-
-setTimeout(function () {
-    localStorage.removeItem("uptadation");
-  
-  }, 10000);
-
-
-function menu() {
-    
-    const buttonElement = document.querySelector('.btn-primary');
-
-
-    let menuChoice = '';
-
-    if(buttonElement.innerText === 'Menu') {              
-        buttonElement.innerHTML = `Close`;
-        let html = `
-        
-            <div class="menu">  <button class="show-less" onclick=" document.querySelector('.options').innerHTML = ''; document.querySelector('.menu-button').innerHTML = 'Menu'; ">X</button> 
-            
-            <div class="container-link"> <a class="menu-links" href="">New Products</a> </div>  
-
-            <div class="container-link"> <a class="menu-links" href="test.html">Cart</a> </div> 
-            
-            <div   class="container-link"> <a class="menu-links" href="">Favorites</a> </div>  
-        
-            <div  class="container-link"> <a class="menu-links" href="main.html">Home</a> </div>
-
-            <a href="homebackend.html">Staff</a>
-            
-            </div>
-        `;
-        menuChoice += html;
-    } else {
-        buttonElement.innerHTML = 'Menu';
-        let html = '';
-        menuChoice += html;
-    }
-
-
-    document.querySelector('.options').innerHTML = menuChoice;
-}
-
-
-
-
-
-function searching() {
-
-
-    const inputElement = document.querySelector('.form-control');
-    console.log(inputElement);
-
-    let name = inputElement.value;
-    
-
-    let display = '';
-
-
-
-    if(name.includes('rod')) {
-        
-        let html = finalRod;
-
-
-
-        display += html;
-
-    } else if(name === 'Rod') {
-     
-
-        let html = finalRod;
-
-        display += html;
-
-    } else if(name === 'Rods') {
-
-    
-
-        let html = finalRod;
-
-        display += html;
-
-    } else if(name === 'Baits') {
-       
-        let html = finalBait;
-
-        display += html;
-    }
-     else {
-        
-
-        let html = `<h1 class="error"> Nothing found for "${name} "</h1>
-                    <h1>Try this:</h1>
-                    <button onclick="
-                              error(); ">Rods</button>
-        `;
-
-        display += html;
-    }
-
-    document.querySelector('.row').innerHTML = localStorage.getItem('uptadation');
-    document.querySelector('.row').innerHTML = display;
-
-  
-
-
-}
-
-let cartCount = 0;
-let cartCount1 = 0;
-let cartCount2 = 0;
-
-
-function addProduct1() {
-
-    document.querySelector('.added').innerHTML = `<i class="fa-solid fa-check"></i> <p>Added</p>`;
-
-    setTimeout( function() {
-        document.querySelector('.added').innerHTML = '';
-    }, 2000)
-
-    const itemsArray = [];
-
-    itemsArray.push('Product1');
-
-    let cartHTML = '';
-
-    for(let i = 0; i < itemsArray.length; i++) {
-        let html = `<div class="product1"> <h1 id="title">Product1</h1>  <button class="plus-button" onclick=" addproduct1PriseAndQuanity(); ">+</button> <div class="count"></div>  <button class="minus-button" onclick="decproduct1PriseAndQuanity();">-</button> <button class="delete" onclick="removeProduct1();">Delete</button> </div>`;
-
-        cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-   
-
-    cartCount1 += 1;
-
-    if(cartCount1 === 1) {
-        cartCount += 1;
-    }
-
-
-    localStorage.setItem('cartCount', cartCount);
-
-    document.querySelector('.items-cart').innerHTML = cartCount;
-
-
-    localStorage.setItem('thing1', shopItem);
-
-}
-
-
-function addProduct2() {
-
-    const itemsArray = [];
-
-    itemsArray.push('Product2');
-
-
-    let cartHTML = '';
-
-    for(let i = 0; i < itemsArray.length; i++) {
-
-        const html = `<div class="product2"> <h1>Product2</h1> <button onclick=" addproduct2PriseAndQuanity(); ">+</button>  <div class="count2"></div> <button onclick=" decproduct2PriseAndQuanity(); "> - </button> <button onclick="removeProduct2();">Delete</button> </div>`;
-       
-        cartHTML += html;
-    }
-
-
-    
-    console.log(itemsArray);
-
-    const shopItem = cartHTML;
-
-    cartCount2 += 1;
-
-    if(cartCount2 === 1) {
-        cartCount += 1;
-    }
-
-
-
-    localStorage.setItem('cartCount', cartCount);
-
-    document.querySelector('.items-cart').innerHTML = cartCount;
-
-    localStorage.setItem('thing2', shopItem);
-
-}
-
-
-
-
-  function place2() {
-    let place = localStorage.getItem("code2");
-    let price = localStorage.getItem("price2");
-    let img = localStorage.getItem('img2');
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff2"> <div class="col-lg"> <div class="card text-bg-secondary mb-3" style="width: 18rem;">
-  <img src="${img}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${place}  $ ${price}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <button class="btn btn-success" onclick="addproduct2PriseAndQuanity();"> + </button>
-    <li class="count2"></li>
-    <button class="btn btn-danger" onclick="decproduct2PriseAndQuanity();"> - </button>
-  </ul>
-  <div class="card-body">
-    <button onclick="removeProduct2();">Delete</button>
-  </div>
-</div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    
-
-   
-
-    localStorage.setItem("thing2", shopItem);
-  }
-
-  function place3() {
-    let place = localStorage.getItem("code3");
-    let price = localStorage.getItem("price3");
-    let img = localStorage.getItem('img3');
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff3"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-  <img src="${img}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${place}  $ ${price}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <button class="btn btn-success" onclick="addproduct3PriseAndQuanity();"> + </button>
-    <li class="count3" style="font-size: 25px;"></li>
-    <button class="btn btn-danger" onclick="decproduct3PriseAndQuanity();"> - </button>
-  </ul>
-  <div class="card-body">
-    <button onclick="removeProduct3();">Delete</button>
-  </div>
-</div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    localStorage.setItem("thing3", shopItem);
-  }
-
-  function place4() {
-    let place = localStorage.getItem("code4");
-    let price = localStorage.getItem("price4");
-    let img = localStorage.getItem('img4');
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff4"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-  <img src="${img}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">${place}  $ ${price}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <button class="btn btn-success" onclick="addproduct4PriseAndQuanity();"> + </button>
-    <li class="count4" style="font-size: 25px;"></li>
-    <button class="btn btn-danger" onclick="decproduct4PriseAndQuanity();"> - </button>
-  </ul>
-  <div class="card-body">
-    <button onclick="removeProduct4();">Delete</button>
-  </div>
-</div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    localStorage.setItem("thing4", shopItem);
-  }
-
-  function place5() {
-    let place = localStorage.getItem("code5");
-    let price = localStorage.getItem("price5");
-    let img = localStorage.getItem("img5");
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff5"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-<img src="${img}" class="card-img-top" alt="...">
-<div class="card-body">
-<h5 class="card-title">${place}  $ ${price}</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-<ul class="list-group list-group-flush">
-<button class="btn btn-success" onclick="addproduct5PriseAndQuanity();"> + </button>
-<li class="count5" style="font-size: 25px;"></li>
-<button class="btn btn-danger" onclick="decproduct5PriseAndQuanity();"> - </button>
-</ul>
-<div class="card-body">
-<button onclick="removeProduct5();">Delete</button>
-</div>
-</div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    localStorage.setItem("thing5", shopItem);
-  }
-
-  function place6() {
-    let place = localStorage.getItem("code6");
-    let price = localStorage.getItem("price6");
-    let img = localStorage.getItem("img6");
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff6"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-    <img src="${img}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${place}  $ ${price}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <button class="btn btn-success" onclick="addproduct6PriseAndQuanity();"> + </button>
-      <li class="count6" style="font-size: 25px;"></li>
-      <button class="btn btn-danger" onclick="decproduct6PriseAndQuanity();"> - </button>
-    </ul>
-    <div class="card-body">
-      <button onclick="removeProduct6();">Delete</button>
-    </div>
-  </div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    localStorage.setItem("thing6", shopItem);
-  }
-
-  function place7() {
-    let place = localStorage.getItem("code7");
-    let price = localStorage.getItem("price7");
-    let img = localStorage.getItem("img7");
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff7"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-    <img src="${img}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${place}  $${price}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <button class="btn btn-success" onclick="addproduct7PriseAndQuanity();"> + </button>
-      <li class="count7" style="font-size: 25px;"></li>
-      <button class="btn btn-danger" onclick="decproduct7PriseAndQuanity();"> - </button>
-    </ul>
-    <div class="card-body">
-      <button onclick="removeProduct7();">Delete</button>
-    </div>
-  </div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    localStorage.setItem("thing7", shopItem);
-  }
-
-  function place8() {
-    let place = localStorage.getItem("code8");
-    let price = localStorage.getItem("price8");
-    let img = localStorage.getItem("img8");
-
-    const itemsArray = [];
-
-    itemsArray.push(place);
-
-    console.log(itemsArray);
-
-    let cartHTML = "";
-
-    for (let i = 0; i < itemsArray.length; i++) {
-      let html = `<div class="stuff8"> <div class="col-lg"> <div class="card text-bg-secondary mb-3 " style="width: 18rem;">
-    <img src="${img}" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">${place}  $${price}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <button class="btn btn-success" onclick="addproduct8PriseAndQuanity();"> + </button>
-      <li class="count8" style="font-size: 25px;"></li>
-      <button class="btn btn-danger" onclick="decproduct8PriseAndQuanity();"> - </button>
-    </ul>
-    <div class="card-body">
-      <button onclick="removeProduct8();">Delete</button>
-    </div>
-  </div> </div> </div>`;
-
-      cartHTML += html;
-    }
-
-    const shopItem = cartHTML;
-
-    cartCount1 += 1;
-
-    if (cartCount1 === 1) {
-      cartCount += 1;
-    }
-
-    localStorage.setItem("thing8", shopItem);
-  }
 
 
  
