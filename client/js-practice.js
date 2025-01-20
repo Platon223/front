@@ -11,7 +11,7 @@ let productTrack = "";
 let uptades = "";
 const sbutton = document.querySelector('.sbutton');
 const list = document.querySelector('.row');
-document.querySelector('.dash-b').innerHTML = localStorage.getItem('dash-name');
+document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('dash-name')}`;
 
 
 
