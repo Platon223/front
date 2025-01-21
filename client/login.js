@@ -16,6 +16,14 @@ socket.on('launch-accounts', usernames => {
     console.log(usernames);
 })
 
+function noInp() {
+    const name = document.querySelector('.username').value;
+
+    if(name === '') {
+        localStorage.setItem('dash-name', 'there');
+    }
+}
+ 
 
 
 function check() {
