@@ -66,6 +66,10 @@ function check() {
 
             document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
             location.reload();
+            console.log('123');
+            console.log('123');
+            console.log('123');
+            console.log('123');
             document.querySelector('.next').innerHTML = `<a href="js.practice.html"><button>Next</button></a>`;
             
 
