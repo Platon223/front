@@ -17,13 +17,9 @@ socket.on('launch-accounts', usernames => {
 })
 
 function noInp() {
-    const name = document.querySelector('.username').value;
-
-    if(name === '') {
-        localStorage.setItem('dash-name', 'there');
-    }
+    localStorage.setItem('dash-name', 'there');
 }
- 
+
 
 
 function check() {
@@ -70,6 +66,7 @@ function check() {
 
             document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
             location.reload();
+            document.querySelector('.next').innerHTML = `<a href="js.practice.html"><button>Next</button></a>`;
             
 
         }
