@@ -68,9 +68,9 @@ function check() {
        
 
             document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
-            const nextBut = `<a href="js-practice.html"><button>Next</button></a>`;
+            const nextBut = `<a href="js-practice.html"><button onclick="localStorage.removeItem('th-name');">Next</button></a>`;
             localStorage.setItem('next', nextBut);
-            document.querySelector('.next').innerHTML = `<a href="js-practice.html"><button>Next</button></a>`;
+            document.querySelector('.next').innerHTML = `<a href="js-practice.html"><button onclick="localStorage.removeItem('th-name');">Next</button></a>`;
             location.reload();
 
         }
