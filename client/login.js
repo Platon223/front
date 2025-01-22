@@ -1,6 +1,7 @@
 const socket = io('https://store-4-rc42.onrender.com');
 
 document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
+document.querySelector('.next').innerHTML = locaStorage.getItem('next');
 
 
 socket.on('see-accounts', data => {
@@ -43,6 +44,8 @@ function check() {
 
         if (nameInUse) {
             console.log('This name is already in use.');
+            localStorage.setItem('next', '');
+            document.querySelector('.next').innerHTML = "";
             location.reload();
         } else {
             console.log('You are good to go.');
@@ -65,12 +68,10 @@ function check() {
        
 
             document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
+            const nextBut = `<a href="js.practice.html"><button>Next</button></a>`;
+            localStorage.setItem('next', nextBut);
+            document.querySelector('.next').innerHTML = `<a href="js.practice.html"><button>Next</button></a>`;
             location.reload();
-
-            setTimeout(function() {
-                 document.querySelector('.next').innerHTML = `<a href="js.practice.html"><button>Next</button></a>`;
-            }, 5000);
-            
 
         }
         
