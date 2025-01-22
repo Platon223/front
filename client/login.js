@@ -1,7 +1,7 @@
 const socket = io('https://store-4-rc42.onrender.com');
 
 document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
-document.querySelector('.next').innerHTML = locaStorage.getItem('next');
+document.querySelector('.next').innerHTML = localStorage.getItem('next');
 
 
 socket.on('see-accounts', data => {
