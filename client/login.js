@@ -18,7 +18,7 @@ socket.on('launch-accounts', usernames => {
 })
 
 function noInp() {
-    localStorage.setItem('dash-name', 'there');
+    localStorage.setItem('th-name', 'there');
 }
 
 
