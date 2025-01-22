@@ -11,7 +11,13 @@ let productTrack = "";
 let uptades = "";
 const sbutton = document.querySelector('.sbutton');
 const list = document.querySelector('.row');
-document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('dash-name')}`;
+
+if(localStorage.getItem('th-name') === 'null') {
+  document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('dash-name')}`;
+} else {
+  document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('th-name')}`;
+}
+ 
 
 
 
