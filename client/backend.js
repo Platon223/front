@@ -8,6 +8,7 @@ let productStorageSpecials = "";
 let productTrack = "";
 let uptades = "";
 const sbutton = document.querySelector('.sbutton');
+const remove = document.querySelector('.del-button');
 
 socket.on('users', (users) => {
   document.querySelector('.num-users').innerHTML = `<p> ${users} people are on your site </p>`;
@@ -28,6 +29,9 @@ sbutton.addEventListener('click', () => {
   
     socket.emit('add-product', product);
   })
+
+
+delete.addEventListener('click', () => {})
 
   function uptade() {
     
