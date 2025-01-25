@@ -38,11 +38,13 @@ remove.addEventListener('click', () => {
     
     products.forEach(pr => {
       if(namePr === pr.nm) {
+        document.querySelector('.product-notf').innerHTML = `<p>Product ${namePr} was deleted</p>`;
         socket.emit('remove-product', namePr);
+      } else {
+        document.querySelector('.product-notf').innerHTML = `<p>Product ${namePr} was not found</p>`;
       }
     })
-    
-
+  
     
   })
   
