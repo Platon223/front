@@ -34,7 +34,20 @@ sbutton.addEventListener('click', () => {
 remove.addEventListener('click', () => {
   const namePr = document.querySelector('.delete-product').value;
 
-  socket.emit('remove-product', namePr);
+  socket.on('show-products', products => {
+    
+    products.forEach(pr => {
+      if(namePr === pr.nm) {
+        socket.emit('remove-product', namePr);
+      }
+    })
+    
+
+    
+  })
+  
+
+  socket.emit('request-products');
 })
 
   function uptade() {
