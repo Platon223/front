@@ -36,11 +36,20 @@
     animation-duration: 1.5s;
 }
 
+.display-3{
+     animation-name: fade;
+     animation-duration: 3s;
+}
+
 @keyframes slideLeft {
     from{transform: translateX(100%)}
 }
 
 @keyframes slideDown {
-    from{transform: translateY(50%)}
+    from{transform: translateY(100%)}
+}
+
+@keyframes fade {
+    50%{opacity: 0}
 }
 
