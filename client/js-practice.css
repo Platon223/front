@@ -26,3 +26,12 @@
     margin-right: auto;
 }
 
+.dash-b{
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+@keyframes slideleft {
+    from{transform: translateX(200%)}
+}
+
