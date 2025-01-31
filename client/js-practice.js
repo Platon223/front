@@ -45,13 +45,14 @@ socket.on('users', (users) => {
 
 function uptadeProducts(products) {
   products.forEach((pr) => {
-    createHTMLDocument(`pr.nm`);
+    createHTMLDocument('product');
     const prElement = document.createElement('div');
     prElement.innerHTML = ` <div class="col-md-4 col-6"> <div class="card text-bg-secondary mb-3">
                       <img class="card-img-top" src="${pr.img}" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">${pr.nm}</h5>
                         <p class="card-text">$ ${pr.price}</p>
+                        <a href="product.html">See Description</a>
                         <a href="#" class="btn btn-primary"> <button class="btn btn-primary" onclick="place${pr.pl}('${pr.nm}', ${pr.price}, '${pr.img}');">Add to cart</button></a>
                       </div>
                     </div> </div> `;
