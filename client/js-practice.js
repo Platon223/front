@@ -65,7 +65,7 @@ function uptadeProducts(products) {
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = `${product.name.replace(/\s+/g, "_")}.html`;
+            a.download = `${pr.nm}.html`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
