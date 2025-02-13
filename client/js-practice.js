@@ -59,6 +59,7 @@ function uptadeProducts(products) {
                 <p>Price: ${pr.price}</p>
             </body>
             </html>`;
+    
 
             // Create a Blob and trigger a download
             const blob = new Blob([htmlContent], { type: "text/html" });
@@ -70,6 +71,11 @@ function uptadeProducts(products) {
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+
+    const prElement = document.createElement("div");
+    prElement.innerHTML = `<div><a href="${pr.nm}.html">${pr.nm}</a></div>`;
+
+    list.appendChild(prElement);
   });
 }
 
