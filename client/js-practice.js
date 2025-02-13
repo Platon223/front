@@ -74,7 +74,7 @@ function uptadeProducts(products) {
 
 
             const list = document.querySelector(".row");
-            const productName = product.name.replace(/\s+/g, "_"); // Match file name format
+            const productName = pr.nm.replace(/\s+/g, "_"); // Match file name format
 
             const prElement = document.createElement("div");
             prElement.innerHTML = `<a href="${productName}.html" download>${pr.nm}</a>`;
