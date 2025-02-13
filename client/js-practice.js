@@ -62,23 +62,14 @@ function uptadeProducts(products) {
     
 
             // Create a Blob and trigger a download
-            const blob = new Blob([htmlContent], { type: "text/html" });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement("a");
-            a.href = url;
-            a.download = `${pr.nm}.html`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+          const blob = new Blob([htmlContent], { type: "text/html" });
+          const url = URL.createObjectURL(blob);
 
-
-            const list = document.querySelector(".row");
-            const productName = pr.nm.replace(/\s+/g, "_"); // Match file name format
-
-            const prElement = document.createElement("div");
-            prElement.innerHTML = `<a href="${productName}.html" download>${pr.nm}</a>`;
-            list.appendChild(prElement);
+    // Create a clickable link
+          const list = document.querySelector(".row");
+          const prElement = document.createElement("div");
+          prElement.innerHTML = `<a href="${url}" target="_blank">${pr.nm}</a>`;
+          list.appendChild(prElement);
   });
 }
 
