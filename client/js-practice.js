@@ -72,10 +72,13 @@ function uptadeProducts(products) {
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-    const prElement = document.createElement("div");
-    prElement.innerHTML = `<div><a href="${pr.nm}.html">${pr.nm}</a></div>`;
 
-    list.appendChild(prElement);
+            const list = document.querySelector(".row");
+            const productName = product.name.replace(/\s+/g, "_"); // Match file name format
+
+            const prElement = document.createElement("div");
+            prElement.innerHTML = `<a href="${productName}.html" download>${pr.nm}</a>`;
+            list.appendChild(prElement);
   });
 }
 
