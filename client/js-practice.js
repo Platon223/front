@@ -44,12 +44,13 @@ socket.on('users', (users) => {
 
 
 function uptadeProducts(products) {
+  const list = document.querySelector(".row");
   products.forEach((pr) => {
-    const list = document.querySelector(".row");
-    const productFile = `${pr.nm.replace(/\s+/g, "_")}.html`;
+    const safeName = pr.nm.replace(/\s+/g, "_").replace(/[^\w-]/g, "");
+    const productFile = `${safeName}.html`; // Ensure it matches the backend filename
 
     const prElement = document.createElement("div");
-    prElement.innerHTML = `<a href="products/${productFile}" target="_blank">${pr.nm}</a>`;
+    prElement.innerHTML = `<a href="/products/${productFile}" target="_blank">${pr.nm}</a>`;
     list.appendChild(prElement);
   });
 }
