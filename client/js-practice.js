@@ -46,9 +46,6 @@ socket.on('users', (users) => {
 function uptadeProducts(products) {
   const list = document.querySelector(".row");
   products.forEach((pr) => {
-    const safeName = pr.nm.replace(/\s+/g, "_").replace(/[^\w-]/g, "");
-    const productFile = `${safeName}.html`; // Ensure it matches the backend filename
-
     const prElement = document.createElement("div");
     prElement.innerHTML = `<a href="https://store-7.onrender.com/products/${pr.nm}.html" target="_blank">${pr.nm}</a>`;
     list.appendChild(prElement);
