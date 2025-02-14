@@ -44,10 +44,10 @@ socket.on('users', (users) => {
 
 
 function uptadeProducts(products) {
-  const list = document.querySelector(".row");
   products.forEach((pr) => {
+    const list = document.querySelector(".row");
     const prElement = document.createElement("div");
-    prElement.innerHTML = `<a href="https://store-7.onrender.com/products/${pr.nm}.html" target="_blank">${pr.nm}</a>`;
+    prElement.innerHTML = `<h1>${pr.nm}</h1>`;
     list.appendChild(prElement);
   });
 }
