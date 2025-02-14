@@ -45,31 +45,12 @@ socket.on('users', (users) => {
 
 function uptadeProducts(products) {
   products.forEach((pr) => {
-    const htmlContent = `
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>${pr.nm}</title>
-            </head>
-            <body>
-                <h1>${pr.nm}</h1>
-                <p></p>
-                <p>Price: ${pr.price}</p>
-            </body>
-            </html>`;
-    
+    const list = document.querySelector(".row");
+    const productFile = `${pr.nm.replace(/\s+/g, "_")}.html`;
 
-            // Create a Blob and trigger a download
-          const blob = new Blob([htmlContent], { type: "text/html" });
-          const url = URL.createObjectURL(blob);
-
-    // Create a clickable link
-          const list = document.querySelector(".row");
-          const prElement = document.createElement("div");
-          prElement.innerHTML = `<a href="${url}" target="_blank">${pr.nm}</a>`;
-          list.appendChild(prElement);
+    const prElement = document.createElement("div");
+    prElement.innerHTML = `<a href="products/${productFile}" target="_blank">${pr.nm}</a>`;
+    list.appendChild(prElement);
   });
 }
 
