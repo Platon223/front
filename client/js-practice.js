@@ -47,7 +47,7 @@ function uptadeProducts(products) {
   products.forEach((pr) => {
     const list = document.querySelector(".row");
     const prElement = document.createElement("div");
-    prElement.innerHTML = `<h1> <a href="https://store-7.onrender.com/${pr.nm}.html">${pr.nm}</a> </h1>`;
+    prElement.innerHTML = `<h1>${pr.nm}</h1>`;
     list.appendChild(prElement);
   });
 }
