@@ -43,8 +43,6 @@ socket.on('users', (users) => {
 async function fetchProducts() {
     
     const response = await fetch("https://store-7.onrender.com/api/products");
-
-    console.log(response);
   
     const products = await response.json();
 
@@ -56,7 +54,7 @@ async function fetchProducts() {
 
         prElement.innerHTML = `<div>
             <h1>${pr.nm}</h1>
-            <a href="https://store-7.onrender.com/products/${pr.nm}">See Description</a>
+            <a href="https://store-7.onrender.com/products/${pr.nm}" target="_blank">See Description</a>
         </div>`;
 
       list.appendChild(prElement);
