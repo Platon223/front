@@ -40,6 +40,29 @@ socket.on('users', (users) => {
 })
 
 
+async function fetchProducts() {
+    
+    const response = fetch("https://store-7.onrender.com/api/products");
+    const products = await response.json();
+
+    const list = document.querySelector('.row');
+
+
+    products.forEach(pr => {
+        const prElement = document.createElement('div');
+
+        prElement.innerHTML = `<div>
+            <h1>${pr.nm}</h1>
+            <a href="https://store-7.onrender.com/products/${pr.nm}">See Description</a>
+        </div>`;
+
+      list.appendChild(prElement);
+    });
+}
+
+fetchProducts();
+
+
 
 
 
