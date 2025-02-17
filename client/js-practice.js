@@ -43,6 +43,9 @@ socket.on('users', (users) => {
 async function fetchProducts() {
     
     const response = fetch("https://store-7.onrender.com/api/products");
+
+    console.log(response);
+  
     const products = await response.json();
 
     const list = document.querySelector('.row');
