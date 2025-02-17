@@ -42,7 +42,7 @@ socket.on('users', (users) => {
 
 async function fetchProducts() {
     
-    const response = fetch("https://store-7.onrender.com/api/products");
+    const response = await fetch("https://store-7.onrender.com/api/products");
 
     console.log(response);
   
