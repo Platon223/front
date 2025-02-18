@@ -32,6 +32,7 @@ sbutton.addEventListener('click', () => {
 
 
 remove.addEventListener('click', () => {
+  socket.emit('remove-product', namePr);
   const namePr = document.querySelector('.delete-product').value;
 
   socket.on('show-products', products => {
@@ -39,7 +40,7 @@ remove.addEventListener('click', () => {
     products.forEach(pr => {
       if(namePr === pr.nm) {
         document.querySelector('.product-notf').innerHTML = `<p>Product ${namePr} was deleted</p>`;
-        socket.emit('remove-product', namePr);
+       
       } else {
         document.querySelector('.product-notf').innerHTML = `<p>Product ${namePr} was not found</p>`;
       }
