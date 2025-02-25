@@ -40,6 +40,21 @@ socket.on('users', (users) => {
 })
 
 
+async function searchPr() {
+    const inputPr = document.querySelector('.ser-pr').value;
+    if(inputPr.includes('rod') || inputPr.includes('Rod')) {
+        const response = await fetch('https://store-7.onrender.com/search/rods');
+        const resultRod = await response.json();
+
+        resultRod.forEach(pr => {
+            const prEl = document.createElement('div');
+            prEl.innerHTML = `<h1>${pr.nm}</h1>`;
+            list.appendChild(prEl);
+        })
+    }
+}
+
+
 async function fetchProducts() {
     
     const response = await fetch("https://store-7.onrender.com/api/products");
