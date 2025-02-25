@@ -17,7 +17,7 @@ socket.on('users', (users) => {
 
 sbutton.addEventListener('click', () => {
     const productName = document.getElementById("name").value;
-    const cls = document.getElementById("name2").value;
+    const cls = document.getElementById("class").value;
     const productClass = document.getElementById("class").value;
     const productPlace = document.getElementById("place").value;
     const productPrice = document.getElementById("price").value;
