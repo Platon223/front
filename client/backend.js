@@ -17,13 +17,13 @@ socket.on('users', (users) => {
 
 sbutton.addEventListener('click', () => {
     const productName = document.getElementById("name").value;
-    const productName2 = document.getElementById("name2").value;
+    const cls = document.getElementById("name2").value;
     const productClass = document.getElementById("class").value;
     const productPlace = document.getElementById("place").value;
     const productPrice = document.getElementById("price").value;
     const productImg = document.getElementById("image").value;
   
-    const product = { price: productName2, nm: productName, nm2: productName2, img: productImg, pl: productPlace };
+    const product = { price: productName2, nm: productName, img: productImg, pl: productPlace, class: cls };
 
     console.log(product);
   
