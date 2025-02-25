@@ -11,6 +11,7 @@ let productTrack = "";
 let uptades = "";
 const sbutton = document.querySelector('.sbutton');
 const list = document.querySelector('.row');
+const serPrMain = document.querySelector('.ser-pr-fin');
 
 if(localStorage.getItem('th-name') === null) {
   document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('dash-name')}`;
@@ -77,6 +78,11 @@ async function fetchProducts() {
 }
 
 fetchProducts();
+
+
+serPrMain.addEventListener('click', () => {
+    searchPr();
+});
 
 
 
