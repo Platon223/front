@@ -9,15 +9,11 @@ let productStorageHooks = "";
 let productStorageSpecials = "";
 let productTrack = "";
 let uptades = "";
-const sbutton = document.querySelector('.sbutton');
-const list = document.querySelector('.row');
-const serPrMain = document.querySelector('.ser-pr-fin');
 
-if(localStorage.getItem('th-name') === null) {
-  document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('dash-name')}`;
-} else {
-  document.querySelector('.dash-b').innerHTML = `Hi, ${localStorage.getItem('th-name')}`;
-}
+const list = document.querySelector('.product-section');
+
+
+
  
 
 
@@ -89,9 +85,6 @@ async function fetchProducts() {
 fetchProducts();
 
 
-serPrMain.addEventListener('click', () => {
-    searchPr();
-});
 
 
 
