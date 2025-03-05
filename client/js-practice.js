@@ -10,7 +10,7 @@ let productStorageSpecials = "";
 let productTrack = "";
 let uptades = "";
 
-const list = document.querySelector('.product-section');
+const list = document.querySelector('.product-container');
 
 
 
@@ -58,7 +58,7 @@ async function fetchProducts() {
   
     const products = await response.json();
 
-    const list = document.querySelector('.row');
+    const list = document.querySelector('.product-container');
 
 
     products.forEach(pr => {
