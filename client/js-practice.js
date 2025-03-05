@@ -72,7 +72,7 @@ async function fetchProducts() {
         />
         <div class="product-info">
           <h2 class="product-title">${pr.nm}</h2>
-          <p class="product-description"> <a href="https://store-7.onrender.com/products/${pr.nm}">Short description of product.</a> </p>
+          <p class="product-description"> <a style="text-decoration: none;  color: white;" href="https://store-7.onrender.com/products/${pr.nm}">Short description of product.</a> </p>
           <p class="product-price">${pr.price}</p>
           <a href="#" class="buy-btn">Buy Now</a>
         </div>
