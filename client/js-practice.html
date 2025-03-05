@@ -1,206 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-     <link rel="stylesheet" href="js-practice.css">
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
-
-    <link rel="icon" href="https://i.imgur.com/g0cCCgB.png" type="image/png"/>
-  
-
-  
-
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Mercatura Fishing, Mercatura, mercatura, fish, fishing, Fishing stuff">
-    <meta name="description" content="This is a fishing shop where you can buy fishing stuff.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://store-4-rc42.onrender.com/socket.io/socket.io.js"></script>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/q70Px70L/mer-fish-logo-123.png"
+      type="image/png"
+    />
+    <title>Dark Themed Store</title>
+    <script
+      defer
+      src="https://store-4-rc42.onrender.com/socket.io/socket.io.js"
+    ></script>
     <script src="js-practice.js" defer></script>
     <script src="alive.js" defer></script>
-    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Mercatura Fishing</title>
+    <style>
+      /* General Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #f5f5f5;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #4caf50;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #f5f5f5;
+        font-size: 1rem;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #4caf50;
+      }
+
+      /* Search Bar */
+      .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #2b2b2b;
+        border-radius: 8px;
+        padding: 5px 10px;
+        width: 250px;
+      }
+
+      .search-bar input {
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        width: 100%;
+        font-size: 1rem;
+      }
+
+      .search-bar input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .search-bar button {
+        background: none;
+        border: none;
+        color: #4caf50;
+        cursor: pointer;
+        font-size: 1.2rem;
+      }
+
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 80px 20px;
+        background: linear-gradient(to right, #1e1e1e, #2b2b2b);
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+
+      .hero .shop-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 24px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+
+      .hero .shop-btn:hover {
+        background-color: #388e3c;
+      }
+
+      /* Product Section */
+      .product-section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .product-container {
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(350px, 1fr)
+        ); /* Wider cards */
+        gap: 40px; /* Increased spacing */
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .product-card {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        width: 350px; /* Wider card width */
+      }
+
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+
+      .product-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .product-info {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .product-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+
+      .product-price {
+        font-size: 1.5rem;
+        color: #4caf50;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+
+      .buy-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .buy-btn:hover {
+        background-color: #388e3c;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1e1e1e;
+        margin-top: 50px;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        margin: 0 10px;
+        color: #f5f5f5;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: #4caf50;
+      }
+
+      .featured-pro {
+        padding-bottom: 60px;
+      }
+
+      .img-logo {
+        width: 80px;
+        border-radius: 100px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .navbar {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .search-bar {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        .product-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
-  <body class="p-3 mb-2 bg-dark text-white">
-     <h1 class="text-white dash-b"></h1>
-
-    <h1 class="text-red">Notice: THE SITE IS UNDER CONSTRUCTION</h1>
-
- 
-
- <nav style="box-shadow:0px 0px 3px white;" class="navbar navbar-expand-lg bg-body-tertiary home-nav" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="http://mer-fish.netlify.app"><img style="width:60px; height:60px; border-radius:50px;"  src="https://i.imgur.com/g0cCCgB.png" alt="logo"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#store">Store</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#about">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#store">Store</a></li>
-            <li><a class="dropdown-item" href="test.html">Cart</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="homebackend.html">Admin</a></li>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img
+          class="img-logo"
+          src="https://i.postimg.cc/q70Px70L/mer-fish-logo-123.png"
+          alt=""
+        />
+      </div>
+      <div class="navbar">
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-disabled="true">Help</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-           <a href="#store"><button type="button" class="btn btn-primary">Go to store</button></a>
-      </form>
-    </div>
-  </div>
-</nav>
-   
-
-   <h1 style="text-align:center; margin-top:100px;" class="display-3">Mercatura Fishing</h1>
-
-    <img style="width:100%; height:600px; border:3px black solid; border-radius:4px;" src="" class="img-fluid" alt="...">
-    
-    
-    <div id="about"></div>
-    <h1 class="text-center">About Us</h1>
-    <div style="margin-top:40px; height:400px; font-size:35px; box-shadow:0px 0px 4px white; border-buttom:2px solid black;" class="card text-bg-dark mb-3">
-      <h5 class="card-header">Cheap and Good</h5>
-      <div class="card-body">
-        <h5 class="card-title">Good products with low prices</h5>
-        <p class="card-text">We have great products with low prices</p>
-      </div>
-    </div>
-
-     <hr style="width: 50%;
-      background-color: black;
-      border: none;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 6px;">
-
-
-
-      <div style="margin-top:40px; height:400px; font-size:35px; box-shadow:0px 0px 4px white; border-buttom:2px solid black; " class="card text-bg-dark mb-3">
-        <h5 class="card-header">Great Quality</h5>
-        <div class="card-body">
-          <h5 class="card-title">Best Quality</h5>
-          <p class="card-text">We have actually great quality products</p>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Search products..." />
+          <button>🔍</button>
         </div>
+        <div class="cart-icon">🛒</div>
       </div>
+    </header>
 
-      <hr style="width: 50%;
-      background-color: black;
-      border: none;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 6px;">
+    <!-- Hero Section -->
+    <section class="hero">
+      <img
+        class="img-logo"
+        src="https://i.postimg.cc/q70Px70L/mer-fish-logo-123.png"
+        alt=""
+      />
+      <h1>Welcome to MyStore</h1>
+      <p>Your one-stop shop for quality products.</p>
+      <a href="#" class="shop-btn">Shop Now</a>
+    </section>
 
-      <div style="margin-top:40px; height:400px; font-size:35px; box-shadow:0px 0px 4px white; border-buttom:2px solid black; " class="card text-bg-dark mb-3">
-          <h5 class="card-header">Easy to order</h5>
-          <div class="card-body">
-            <h5 class="card-title">3 step shopping</h5>
-            <p class="card-text">1. Click the "Add to cart" button. 2. Click "save" button. 3. Click "checkout" button and provide your email. That's it! Your order is on the way!!!</p>
+    <!-- Product Section -->
+    <section class="product-section">
+      <h2 class="featured-pro">Featured Products</h2>
+      <div class="product-container">
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1549262803-693ee58a796b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="product-img"
+          />
+          <div class="product-info">
+            <h2 class="product-title">Product 1</h2>
+            <p class="product-price">$19.99</p>
+            <a href="#" class="buy-btn">Buy Now</a>
           </div>
-      </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/350x250" class="product-img" />
+          <div class="product-info">
+            <h2 class="product-title">Product 2</h2>
+            <p class="product-price">$24.99</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/350x250" class="product-img" />
+          <div class="product-info">
+            <h2 class="product-title">Product 3</h2>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
+        </div>
 
-  
-    <div style="margin-top:200px;" id="store"></div>
-
-    <h1 class="text-center">Shop</h1>
-    <nav  class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="http://mer-fish.netlify.app"><img style="width:60px; height:60px; border-radius:50px;"  src="https://i.imgur.com/g0cCCgB.png" alt="logo"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="js-practice.html"
-                >Help</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="test.html">Cart</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="test.html">Cart</a></li>
-                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="homebackend.html"
-                    >Staff Only</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Help</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              oninput="searching();"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/350x250" class="product-img" />
+          <div class="product-info">
+            <h2 class="product-title">Product 2</h2>
+            <p class="product-price">$24.99</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
 
-    <div>
-      
-        <input class="form-control ser-pr" type="text" />
-        <button class="ser-pr-fin">Search</button>
-      
-    </div>
-
-    
-
-    <p class="test"></p>
-
-    <div class="container" style="margin-top: 27px">
-      <div class="row gy-3"></div>
-    </div>
-
-    
-</body>
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 MyStore | Follow us:
+      <div class="social-icons">
+        <a href="#">📘</a>
+        <a href="#">🐦</a>
+      </div>
+    </footer>
+  </body>
 </html>
