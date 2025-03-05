@@ -1,4 +1,4 @@
-const socket = io('https://store-4-rc42.onrender.com');
+const socket = io('https://store-7.onrender.com');
 
 document.querySelector('.dash').innerHTML = localStorage.getItem('dash-name');
 document.querySelector('.next').innerHTML = localStorage.getItem('next');
