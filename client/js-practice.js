@@ -38,7 +38,7 @@ socket.on('users', (users) => {
 
 
 async function searchPr() {
-    const inputPr = document.getElementById('product-seacrh-bar-nav').value;
+    const inputPr = document.getElementById('product-search-bar-nav').value;
     if(inputPr.includes('rod') || inputPr.includes('Rod')) {
         const response = await fetch('https://store-7.onrender.com/search/rods');
         const resultRod = await response.json();
