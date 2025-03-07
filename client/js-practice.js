@@ -59,7 +59,7 @@ async function searchPr() {
                <a href="#" class="buy-btn">Buy Now</a>
              </div>
           `;
-            list.innerHTML += prEl;
+            list.appendChild(prEl);
         })
     }
 }
