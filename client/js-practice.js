@@ -40,27 +40,8 @@ socket.on('users', (users) => {
 async function searchPr() {
     const inputPr = document.getElementById('product-search-bar-nav').value;
     if(inputPr.includes('rod') || inputPr.includes('Rod')) {
-        const response = await fetch('https://store-7.onrender.com/search/rods');
-        const resultRod = await response.json();
-
-        resultRod.forEach(pr => {
-            const prEl = document.createElement('div');
-            prEl.className = "product-card";
-            prEl.innerHTML = `
-             <img
-               src="https://images.unsplash.com/photo-1741087562365-d0bf6e6fd7ef?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-               alt="Product Image"
-               class="product-img"
-             />
-             <div class="product-info">
-               <h2 class="product-title">${pr.nm}</h2>
-               <p class="product-description"> <a style="text-decoration: none;  color: white;" href="https://store-7.onrender.com/products/${pr.nm}">Short description of product.</a> </p>
-               <p class="product-price">${pr.price}</p>
-               <a href="#" class="buy-btn">Buy Now</a>
-             </div>
-          `;
-            list.appendChild(prEl);
-        })
+       window.location.href = "https://store-7.onrender.com/search/rods";
+    
     }
 }
 
