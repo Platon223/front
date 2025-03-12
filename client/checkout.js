@@ -1,4 +1,4 @@
-const cart = JSON.parse(localStorage.getItem('cart-body')) || [];
+const cart = JSON.parse(localStorage.getItem('cart-body'));
 const summary = document.querySelector('.cart-items');
 
 cart.forEach(pr => {
