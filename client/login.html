@@ -131,6 +131,7 @@
 
           if (currentUser.password === password) {
             console.log(`logged in as: ${currentUser.name}`);
+            localStorage.setItem('loginName', currentUser.name);
             displayAlert("success");
             setTimeout(() => {
               window.location.href =
