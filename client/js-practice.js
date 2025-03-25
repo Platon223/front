@@ -50,8 +50,8 @@ async function checkStatus() {
         const user = result.find(usr => usr.name === localStorage.getItem('loginName'));
         
 
-        document.querySelector('.greeting').innerHTML = 'Hi,';
-        document.getElementById('client-name').innerHTML = 'hi';
+        document.querySelector('.greeting').innerHTML = `Hi, ${user.name}!`;
+        
 
     }
 }
