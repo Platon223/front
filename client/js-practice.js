@@ -44,6 +44,7 @@ async function checkStatus() {
     if(localStorage.getItem('loginName') === null) {
         console.log('Not logged in');
     } else {
+        console.log(localStorage.getItem('loginName'));
         const response = await fetch('https://store-7.onrender.com/users');
         const result = await response.json();
 
