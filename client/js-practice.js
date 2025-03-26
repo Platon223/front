@@ -61,6 +61,23 @@ async function checkStatus() {
 checkStatus();
 
 
+async function logOut() {
+    const allUsers = await fetch('https://store-7.onrender.com/users');
+    const jsonFormat = await allUsers.json();
+
+
+    if(localStorage.getItem('loginName') !== null) {
+        const user = jsonFormat.find(usr => usr.name === localStorage.getItem('loginName'));
+
+        const logoutUserInfo = {password: user.password};
+
+        socket.emit('logout-user', logoutUserInfo);
+
+
+    }
+}
+
+
 
 
 async function searchPr() {
