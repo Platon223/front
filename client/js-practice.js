@@ -43,6 +43,8 @@ socket.on('users', (users) => {
 async function checkStatus() {
     if(localStorage.getItem('loginName') === null) {
         console.log('Not logged in');
+        const logtButton = document.querySelector('.logout-btn');
+        logtButton.style.display = 'none';
     } else {
         const response = await fetch('https://store-7.onrender.com/users');
         const result = await response.json();
