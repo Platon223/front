@@ -250,6 +250,24 @@
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
     }
 
+      .logout-btn {
+        background: #d32f2f;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        display: inline-block;
+    }
+    
+    .logout-btn:hover {
+        background: #b71c1c;
+    }
+
+
 
       /* Responsive */
       @media (max-width: 768px) {
@@ -299,6 +317,8 @@
           <button onclick="searchPr();">🔍</button>
         </div>
         <div class="cart-icon">🛒</div>
+        <button class="logout-btn"></button>
+
       </div>
     </header>
 
