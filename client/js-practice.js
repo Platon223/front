@@ -73,6 +73,10 @@ async function logOut() {
 
         socket.emit('logout-user', logoutUserInfo);
 
+        localStorage.clear();
+
+        window.location.href = "https://mer-fish.netlify.app/signup";
+
 
     }
 }
