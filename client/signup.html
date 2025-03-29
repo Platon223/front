@@ -60,6 +60,7 @@
   </head>
   <body>
     <div class="container">
+      <h4 id="loading" style="display: none;">Please wait...</h4>
       <h2>Sign Up</h2>
       <form>
         <input id="name" type="text" placeholder="Full Name" required />
@@ -81,6 +82,14 @@
 
         const newUser = { name: name, email: email, password: password };
         socket.emit("createAcc", newUser);
+
+        const loading = document.getElementById('loading');
+        loading.style.display = "block";
+
+
+        setTimeout(() => {
+          window.location.href = 'https://mer-fish.netlify.app';
+        }, 4000)
       });
     </script>
   </body>
