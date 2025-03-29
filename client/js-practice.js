@@ -61,8 +61,23 @@ async function checkStatus() {
 checkStatus();
 
 
-async function logOut() {
-    const allUsers = await fetch('https://store-7.onrender.com/users');
+function logOut() {
+    document.body.innerHTML = `
+           <div class="popup" id="logoutPopup" style="display: flex; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; justify-content: center; align-items: center;">
+        <div class="popup-container" style="background-color: #1e1e1e; padding: 30px; border-radius: 10px; text-align: center; width: 300px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Are you sure you want to log out?</h3>
+            <div class="popup-btns" style="display: flex; justify-content: space-between;">
+                <button class="popup-btn" onclick="yes();" style="padding: 10px 20px; font-size: 1rem; background-color: #4caf50; color: white; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; transition: background 0.3s;">Yes, Log Out</button>
+                <button class="popup-btn cancel-btn" onclick="no();" style="padding: 10px 20px; font-size: 1rem; background-color: #f44336; color: white; font-weight: bold; border-radius: 8px; border: none; cursor: pointer; transition: background 0.3s;">Cancel</button>
+            </div>
+        </div>
+    </div>
+        
+        `;
+}
+
+async function yes() {
+ const allUsers = await fetch('https://store-7.onrender.com/users');
     const jsonFormat = await allUsers.json();
 
 
@@ -79,6 +94,10 @@ async function logOut() {
 
 
     }
+}
+
+function no() {
+ location.reload();
 }
 
 
