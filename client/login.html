@@ -141,21 +141,23 @@
                 "https://mer-fish.netlify.app/js-practice.html";
             }, 1000);
           } else {
+            loadingSign.style.display = "none";
             console.log("the password is incorrect");
             displayAlert("error");
 
             setTimeout(() => {
               location.reload();
-            }, 3000);
+            }, 4000);
             
           }
         } catch (err) {
+          loadingSign.style.display = "none";
           console.log("something went wrong");
           displayAlert("error");
 
             setTimeout(() => {
               location.reload();
-            }, 3000);
+            }, 4000);
         }
       }
 
