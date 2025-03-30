@@ -133,6 +133,7 @@
           const currentUser = userArray.find((usr) => usr.email === email);
 
           if (currentUser.password === password) {
+            loadingSign.style.display = "none";
             console.log(`logged in as: ${currentUser.name}`);
             localStorage.setItem('loginName', currentUser.name);
             displayAlert("success");
