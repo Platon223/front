@@ -106,6 +106,7 @@
   </head>
   <body>
     <div class="container">
+      <h4 style="display: none;" class="load">Please wait...</h4>
       <div class="alert success">Login successful!</div>
       <div class="alert error">Something went wrong. Please try again.</div>
 
@@ -120,6 +121,8 @@
     </div>
     <script>
       async function logIn() {
+        const loadingSign = document.querySelector('.load');
+        loadingSign.style.display = "block";
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
 
@@ -140,10 +143,19 @@
           } else {
             console.log("the password is incorrect");
             displayAlert("error");
+
+            setTimeout(() => {
+              location.reload();
+            }, 3000);
+            
           }
         } catch (err) {
           console.log("something went wrong");
           displayAlert("error");
+
+            setTimeout(() => {
+              location.reload();
+            }, 3000);
         }
       }
 
