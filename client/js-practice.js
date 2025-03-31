@@ -38,6 +38,10 @@ socket.on('users', (users) => {
   console.log(users);
 })
 
+window.onload = () => {
+ document.querySelector('.loading-overlay').style.display = "none";
+}
+
 
 
 async function checkStatus() {
