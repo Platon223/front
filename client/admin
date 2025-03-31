@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Manage Products</title>
+    <script src="backend.js"></script>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4caf50;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4caf50;
+        }
+
+        /* Admin Container */
+        .admin-container {
+            width: 90%;
+            max-width: 800px;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        h2 {
+            color: #4caf50;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            color: #f5f5f5;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            background: #2a2a2a;
+            color: white;
+            border: 1px solid #444;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+
+        /* Product List */
+        .product-list {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .product-item {
+            background: #2a2a2a;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delete-btn {
+            background-color: red;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+        }
+
+        .delete-btn:hover {
+            background-color: darkred;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Pl_Soft</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Admin Panel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-container">
+        <h2>Admin Dashboard - Manage Products</h2>
+
+        <!-- Add Product Form -->
+        <form id="addProductForm">
+            <div class="input-group">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" placeholder="Enter product name">
+            </div>
+            <div class="input-group">
+                <label for="productPrice">Price ($)</label>
+                <input type="number" id="productPrice" placeholder="Enter price">
+            </div>
+            <div class="input-group">
+                <label for="productCategory">Category</label>
+                <input type="text" id="productCategory" placeholder="Enter category">
+            </div>
+            <div class="input-group">
+                <label for="productImage">Image URL</label>
+                <input type="text" id="productImage" placeholder="Enter image URL">
+            </div>
+            <div class="input-group">
+                <label for="productDescription">Description</label>
+                <textarea id="productDescription" rows="3" placeholder="Enter description"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="productStock">Stock</label>
+                <input type="number" id="productStock" placeholder="Enter stock quantity">
+            </div>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <!-- Delete Product -->
+        <form id="deleteProductForm">
+            <div class="input-group">
+                <label for="deleteProductName">Delete Product by Name</label>
+                <input type="text" id="deleteProductName" placeholder="Enter product name">
+            </div>
+            <button type="submit">Delete Product</button>
+        </form>
+
+        <!-- Product List -->
+        <h2>Product List</h2>
+        <div id="productList" class="product-list">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </div>
+
+</body>
+</html>
